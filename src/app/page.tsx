@@ -403,7 +403,7 @@ export default function Home() {
                     <Play className="w-2 h-2 md:w-10 md:h-10 text-[#1f9e2e] fill-current" />
                 </a>
             </div>
-            <div className="relative bg-white shadow-lg rounded-lg -mt-16 p-6 md:p-8">
+            <div className="relative bg-white shadow-lg rounded-lg -mt-16 p-6 md:p-8 z-2">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center divide-x divide-gray-200">
                     <div className="px-2">
                         <h4 className="text-2xl md:text-4xl font-bold text-green-600">120.000m²</h4>
