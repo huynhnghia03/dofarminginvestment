@@ -85,7 +85,7 @@ export default async function ProductPage({ params }: Props) {
                 <>
                   <h3>Công dụng</h3>
                   <ul className="space-y-4 list-none pl-0">
-                    {product.benefits.map((benefit:any, index:any) => (
+                    {product.benefits.map((benefit:string, index:number) => (
                       <li key={index} className="flex items-start space-x-3">
                         <CheckCircleIcon className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                         <span>{benefit}</span>
@@ -100,7 +100,7 @@ export default async function ProductPage({ params }: Props) {
               <div className="overflow-x-auto">
                 <table className="min-w-full">
                   <tbody>
-                    {product.technicalSpecs.map((spec:any, index:any) => (
+                    {product.technicalSpecs.map((spec: { label: string; values: string | string[] }, index: number) => (
                       <tr key={index} className="border-b">
                         <td className="py-3 font-medium">{spec.label}</td>
                         <td className="py-3 px-4">

@@ -38,7 +38,7 @@ export async function getNewsArticle(slug: string): Promise<NewsArticle> {
   return res.json();
 }
 
-export async function submitContactForm(data: any) {
+export async function submitContactForm(data: string) {
   const res = await fetch(`${API_URL}/contact`, {
     method: 'POST',
     headers: {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 export const metadata = {
   title: "Lịch Sử & Định Hướng - Chánh Thu Group",

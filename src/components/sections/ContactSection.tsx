@@ -16,12 +16,7 @@ const schema = yup.object().shape({
 });
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+ 
   const [formStatus, setFormStatus] = useState<string | null>(null);
   const {
     register,
@@ -32,7 +27,7 @@ export default function ContactSection() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: { name: string; phone: string; message: string }) => {
     setFormStatus(null);
     try {
       const res = await fetch("/api/contact", {
@@ -42,7 +37,7 @@ export default function ContactSection() {
       });
       if (res.ok) {
         setFormStatus("success");
-        setFormData({ name: "", email: "", phone: "", message: "" });
+       
         reset();
       } else {
         setFormStatus("error");
@@ -52,15 +47,7 @@ export default function ContactSection() {
     }
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+ 
 
   return (
     <section id="contact" className="py-12 px-4 bg-gray-50">

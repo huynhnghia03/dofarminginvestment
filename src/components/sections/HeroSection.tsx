@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronRight, ChevronLeft } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,29 +13,13 @@ const HeroSlider = () => {
     'https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-xoai.png'
   ];
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (!isAnimating) {
       setIsAnimating(true);
       setCurrentSlide((prev) => (prev + 1) % slides.length);
       setTimeout(() => setIsAnimating(false), 600);
     }
-  };
-
-  const prevSlide = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-      setTimeout(() => setIsAnimating(false), 600);
-    }
-  };
-
-  const goToSlide = (index:any) => {
-    if (!isAnimating && index !== currentSlide) {
-      setIsAnimating(true);
-      setCurrentSlide(index);
-      setTimeout(() => setIsAnimating(false), 600);
-    }
-  };
+  }, [isAnimating, slides.length]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -42,7 +27,7 @@ const HeroSlider = () => {
     }, 4000);
 
     return () => clearInterval(timer);
-  }, [isAnimating]);
+  }, [nextSlide]);
 
   return (
     <div className="relative w-full h-[500px] lg:h-[600px]">
@@ -73,10 +58,12 @@ const HeroSlider = () => {
                   : 'opacity-0 scale-105'
               }`}
             >
-              <img
+              <Image
                 src={src}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover"
+                 width={150}
+              height={56}
                 loading={index === 0 ? "eager" : "lazy"}
               />
               {/* Overlay gradient */}
@@ -186,7 +173,7 @@ export default function CurvedHeroSection() {
             </h1>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              Chánh Thu với phương châm "Mỗi sản phẩm là một niềm tin", bằng
+              Chánh Thu với phương châm Mỗi sản phẩm là một niềm tin, bằng
               cái tâm của người làm nghề lâu năm lĩnh vực kinh doanh trái cây,
               chúng tôi luôn mong muốn xây dựng dây chuyền sản xuất quy mô,
               khoa học, đảm bảo chất lượng an toàn vệ sinh thực phẩm.

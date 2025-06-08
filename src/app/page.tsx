@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import { ChevronRight, Play, Star } from "lucide-react";
-import Slider from "react-slick";
 import { HeroSection } from "@/components/sections";
 
 const products = [
@@ -59,7 +58,7 @@ const features = [
 ];
 
 // Component Card sản phẩm
-const ProductCard = ({ product }:any) => (
+const ProductCard = ({ product }: { product: typeof products[number] }) => (
   <div className="group text-center rounded-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
     <div className="relative overflow-hidden">
       <Link href={product.link}>
@@ -141,19 +140,19 @@ const ProductCard = ({ product }:any) => (
 // };
 
 // Wrapper để chỉ render component trên client-side, tránh lỗi hydration của Next.js
-const ClientOnly = ({ children }:any) => {
-  const [hasMounted, setHasMounted] = useState(false);
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    // Render một placeholder trong khi chờ mount để tránh layout shift
-    return <div className="slider-mask-container bg-gray-200"></div>;
-  }
-  return <>{children}</>;
-};
+// const ClientOnly = ({ children }:any) => {
+//   const [hasMounted, setHasMounted] = useState(false);
+//   useEffect(() => {
+//     setHasMounted(true);
+//   }, []);
+//   if (!hasMounted) {
+//     // Render một placeholder trong khi chờ mount để tránh layout shift
+//     return <div className="slider-mask-container bg-gray-200"></div>;
+//   }
+//   return <>{children}</>;
+// };
 export default function Home() {
-   const [currentSlide, setCurrentSlide] = useState(0)
+  //  const [currentSlide, setCurrentSlide] = useState(0)
 
   const fruits = [
     {
@@ -178,7 +177,7 @@ export default function Home() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % fruits.length)
+      // setCurrentSlide((prev) => (prev + 1) % fruits.length)
     }, 3000)
 
     return () => clearInterval(timer)

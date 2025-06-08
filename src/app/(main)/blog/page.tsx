@@ -1,7 +1,7 @@
 import { getBlogPosts } from "../../../services/api";
 import Image from "next/image";
 import Link from "next/link";
-import { formatDate } from "../../../lib/utils";
+// import { formatDate } from "../../../lib/utils";
 import Card from "../../../components/ui/Card";
 
 export const metadata = {

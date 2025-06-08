@@ -20,11 +20,8 @@ const navigation = [
     ]
   },
   { name: 'Sản phẩm', href: '/products' },
-  { name: 'Gallery', href: '/gallery' },
-  { name: 'Tin tức', href: '/news' },
-  { name: 'Blog', href: '/blog' },
   { name: 'Liên hệ', href: '/contact' },
-  { name: 'Tuyển dụng', href: '/recruitment' },
+
 ];
 
 const languages = [

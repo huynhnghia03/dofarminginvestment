@@ -265,7 +265,7 @@ const news = [
   }
 ];
 
-    const PaymentIcon = ({ children }:any) => (
+    const PaymentIcon = ({ children }: { children: React.ReactNode }) => (
         <div className="h-8 flex items-center">{children}</div>
     );
 const Footer = () => {
@@ -379,11 +379,16 @@ const Footer = () => {
       </div>
        <div className="bg-[#5c5c5c] text-[#ffffff80] absolute-footer medium-text-center text-center py-4">
            <div className="flex items-center space-x-2 justify-center mb-4">
-                <PaymentIcon><img alt="ATM" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/atm.svg" className="h-5"/></PaymentIcon>
-                <PaymentIcon><img alt="Bank Transfer" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/cod.svg" className="h-5"/></PaymentIcon>
-                <PaymentIcon><img alt="JCB" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/jcb.svg" className="h-5"/></PaymentIcon>
-                 <PaymentIcon><img alt="MasterCard" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/mc.svg" className="h-5"/></PaymentIcon>
-                <PaymentIcon><img alt="Visa" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/visa.svg" className="h-5"/></PaymentIcon>
+                <PaymentIcon><Image  width={150}
+              height={56} alt="ATM" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/atm.svg" className="h-5"/></PaymentIcon>
+                <PaymentIcon><Image  width={150}
+              height={56} alt="Bank Transfer" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/cod.svg" className="h-5"/></PaymentIcon>
+                <PaymentIcon><Image  width={150}
+              height={56} alt="JCB" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/jcb.svg" className="h-5"/></PaymentIcon>
+                 <PaymentIcon><Image  width={150}
+              height={56} alt="MasterCard" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/mc.svg" className="h-5"/></PaymentIcon>
+                <PaymentIcon><Image  width={150}
+              height={56} alt="Visa" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/visa.svg" className="h-5"/></PaymentIcon>
             
             </div>
 

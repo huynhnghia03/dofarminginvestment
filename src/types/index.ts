@@ -1,6 +1,5 @@
 export interface Product {
-  technicalSpecs: any;
-  benefits: any;
+
   id: string;
   name: string;
   slug: string;
