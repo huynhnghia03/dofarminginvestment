@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "Chứng Nhận Tiêu Chuẩn - Chánh Thu Group",
-  description: "Các chứng nhận quốc tế về chất lượng và quy trình sản xuất của Chánh Thu Group",
+  title: "Chứng Nhận Tiêu Chuẩn - Dofarming Group",
+  description: "Các chứng nhận quốc tế về chất lượng và quy trình sản xuất của Dofarming Group",
 };
 
 const certificates = [
@@ -62,7 +62,7 @@ export default function CertificatesPage() {
           </h2>
           <div className="prose prose-lg max-w-none">
             <p>
-              Chánh Thu Group luôn đặt chất lượng sản phẩm lên hàng đầu. Chúng tôi
+              Dofarming Group luôn đặt chất lượng sản phẩm lên hàng đầu. Chúng tôi
               tự hào khi đạt được các chứng nhận quốc tế quan trọng, khẳng định
               năng lực và uy tín của doanh nghiệp trong lĩnh vực xuất khẩu trái cây.
             </p>

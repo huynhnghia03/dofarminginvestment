@@ -11,8 +11,8 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Chánh Thu Group - Xuất nhập khẩu trái cây",
-  description: "Công ty Cổ phần Tập đoàn Xuất – Nhập Khẩu Trái Cây Chánh Thu",
+  title: "Dofarming Group - Xuất nhập khẩu trái cây",
+  description: "Công ty Cổ phần Tập đoàn Xuất – Nhập Khẩu Trái Cây Dofarming",
 };
 
 export default function RootLayout({

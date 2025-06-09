@@ -32,7 +32,7 @@ export default function FeaturesSection() {
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-green-600">Giá trị cốt lõi</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Chánh Thu Group
+            Dofarming Group
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Với hơn 20 năm kinh nghiệm trong lĩnh vực xuất nhập khẩu trái cây, chúng tôi tự hào mang đến những sản phẩm chất lượng cao cho khách hàng trong và ngoài nước.

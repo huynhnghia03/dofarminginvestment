@@ -8,7 +8,7 @@ export default function NotFound() {
         <div className="relative w-40 h-40 mx-auto mb-8">
           <Image
             src="/images/logo.png"
-            alt="Chánh Thu Logo"
+            alt="Dofarming Logo"
             fill
             className="object-contain opacity-50"
           />

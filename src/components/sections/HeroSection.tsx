@@ -173,7 +173,7 @@ export default function CurvedHeroSection() {
             </h1>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              Chánh Thu với phương châm Mỗi sản phẩm là một niềm tin, bằng
+              Dofarming với phương châm Mỗi sản phẩm là một niềm tin, bằng
               cái tâm của người làm nghề lâu năm lĩnh vực kinh doanh trái cây,
               chúng tôi luôn mong muốn xây dựng dây chuyền sản xuất quy mô,
               khoa học, đảm bảo chất lượng an toàn vệ sinh thực phẩm.

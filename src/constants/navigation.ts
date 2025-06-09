@@ -17,7 +17,7 @@ export const socialLinks = {
 
 export const contactInfo = {
   phone: "0889.269.777",
-  email: "sales@chanhthu.com",
+  email: "sales@Dofarming.com",
   address: "Room 203, Floor 02, Saigon Paragon Building, 03 Nguyen Luong Bang, Tan Phu Ward, District 7, HCMC",
   workingHours: "Thứ 2 – Thứ 6: 8:00 - 17:00",
   hotline: "028 6278 8887",

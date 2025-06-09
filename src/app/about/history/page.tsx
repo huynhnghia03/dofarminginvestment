@@ -1,15 +1,15 @@
 
 
 export const metadata = {
-  title: "Lịch Sử & Định Hướng - Chánh Thu Group",
-  description: "Tìm hiểu về lịch sử phát triển và định hướng tương lai của Chánh Thu Group",
+  title: "Lịch Sử & Định Hướng - Dofarming Group",
+  description: "Tìm hiểu về lịch sử phát triển và định hướng tương lai của Dofarming Group",
 };
 
 const milestones = [
   {
     year: "1997",
     title: "Thành lập công ty",
-    description: "Chánh Thu được thành lập với tư cách là một doanh nghiệp chuyên về xuất khẩu trái cây.",
+    description: "Dofarming được thành lập với tư cách là một doanh nghiệp chuyên về xuất khẩu trái cây.",
   },
   {
     year: "2005",

@@ -1,4 +1,6 @@
 export interface Product {
+  benefits: any;
+  technicalSpecs: any;
 
   id: string;
   name: string;

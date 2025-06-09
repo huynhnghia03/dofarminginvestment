@@ -8,7 +8,7 @@
 //     link: '/news/tuyen-dung-chuyen-vien-thu-mua'
 //   },
 //   {
-//     title: 'Thủ tướng Phạm Minh Chính cùng Thủ tướng Hà Lan Mark Rutte thăm vựa trái cây Chánh Thu',
+//     title: 'Thủ tướng Phạm Minh Chính cùng Thủ tướng Hà Lan Mark Rutte thăm vựa trái cây Dofarming',
 //     date: '2024-10-14',
 //     link: '/news/thu-tuong-tham-chanh-thu'
 //   },
@@ -67,8 +67,8 @@
 //                   width={24}
 //                   height={24}
 //                 />
-//                 <a href="mailto:sales@chanhthu.com" className="hover:text-green-600">
-//                   sales@chanhthu.com
+//                 <a href="mailto:sales@Dofarming.com" className="hover:text-green-600">
+//                   sales@Dofarming.com
 //                 </a>
 //               </div>
 //             </div>
@@ -98,7 +98,7 @@
 
 //           {/* Tin tức */}
 //           <div>
-//             <h3 className="text-xl font-semibold mb-6">Tin Tức Chánh Thu</h3>
+//             <h3 className="text-xl font-semibold mb-6">Tin Tức Dofarming</h3>
 //             <div className="space-y-4">
 //               {news.map((item) => (
 //                 <Link 
@@ -226,7 +226,7 @@
 //               {/* Copyright */}
 //               <div className="footer-primary pull-left order-1 md:order-2">
 //                 <div className="copyright-footer text-gray-600">
-//                   Copyright 2025 © <strong>CÔNG TY CỔ PHẦN TẬP ĐOÀN XUẤT - NHẬP KHẨU TRÁI CÂY CHÁNH THU</strong>
+//                   Copyright 2025 © <strong>CÔNG TY CỔ PHẦN TẬP ĐOÀN XUẤT - NHẬP KHẨU TRÁI CÂY Dofarming</strong>
 //                 </div>
 //               </div>
 //             </div>
@@ -249,7 +249,7 @@ const news = [
     link: '/news/tuyen-dung-chuyen-vien-thu-mua'
   },
   {
-    title: 'Thủ tướng Phạm Minh Chính cùng Thủ tướng Hà Lan Mark Rutte thăm vựa trái cây Chánh Thu',
+    title: 'Thủ tướng Phạm Minh Chính cùng Thủ tướng Hà Lan Mark Rutte thăm vựa trái cây Dofarming',
     date: '2024-10-14',
     link: '/news/thu-tuong-tham-chanh-thu'
   },
@@ -294,8 +294,8 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-6 h-6 text-green-600 flex-shrink-0" />
-                  <a href="mailto:sales@chanhthu.com" className="hover:text-green-700">
-                    sales@chanhthu.com
+                  <a href="mailto:sales@Dofarming.com" className="hover:text-green-700">
+                    sales@Dofarming.com
                   </a>
                 </div>
               </div>
@@ -323,7 +323,7 @@ const Footer = () => {
 
             {/* Tin tức */}
             <div>
-              <h3 className="text-xl font-semibold mb-6">Tin Tức Chánh Thu</h3>
+              <h3 className="text-xl font-semibold mb-6">Tin Tức Dofarming</h3>
               <div className="space-y-4">
                 {news.map((item) => (
                   <Link
@@ -393,7 +393,7 @@ const Footer = () => {
             </div>
 
             <div className="mb-4 md:mb-0 ">
-                <p>Copyright 2025 © CÔNG TY CỔ PHẦN TẬP ĐOÀN XUẤT - NHẬP KHẨU TRÁI CÂY CHÁNH THU</p>
+                <p>Copyright 2025 © CÔNG TY CỔ PHẦN TẬP ĐOÀN XUẤT - NHẬP KHẨU TRÁI CÂY DOFARMING</p>
             </div>
   
            

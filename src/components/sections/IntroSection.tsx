@@ -25,7 +25,7 @@ export default function IntroSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            Về Chánh Thu Group
+            Về Dofarming Group
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Chuyên cung cấp và xuất khẩu các loại trái cây nhiệt đới chất lượng cao

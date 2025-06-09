@@ -61,7 +61,7 @@ export default function Products() {
 			<div className="relative h-[40vh] w-full">
 				<Image
 					src="/images/products/hero-products.jpg"
-					alt="Sản phẩm Chánh Thu"
+					alt="Sản phẩm Dofarming"
 					fill
 					className="object-cover"
 					priority

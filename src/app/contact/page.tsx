@@ -10,16 +10,16 @@ const locations = [
     mapUrl: "https://goo.gl/maps/5VQbhDVjnTvhxzu19",
   },
   {
-    name: "Nhà máy 1 - Chánh Thu Bến Tre",
+    name: "Nhà máy 1 - Dofarming Bến Tre",
     address: "Ấp Nhơn Phú, Xã Hòa Nghĩa, Huyện Chợ Lách, Tỉnh Bến Tre",
     mapUrl: "https://goo.gl/maps/3eBHeJ9VNxvy6x6z8",
   },
   {
-    name: "Nhà máy 2 - Chánh Thu Nha Trang",
+    name: "Nhà máy 2 - Dofarming Nha Trang",
     address: "KCN Suối Dầu, Xã Suối Tân, Huyện Cam Lâm, Tỉnh Khánh Hòa",
   },
   {
-    name: "Nhà máy 3 - Chánh Thu Đăk Lăk",
+    name: "Nhà máy 3 - Dofarming Đăk Lăk",
     address: "Thôn Nam Kỳ, Xã Ea Drông, Huyện Cư M'gar, Tỉnh Đăk Lăk",
     mapUrl: "https://goo.gl/maps/GFp9jmS8ugoNNNu49",
   },
@@ -28,11 +28,11 @@ const locations = [
 const contactInfo = {
   phones: [
     { label: "Văn phòng đại diện HCM", number: "028 6278 8887" },
-    { label: "Văn phòng Chánh Thu Bến Tre", number: "0889 269 777" },
+    { label: "Văn phòng Dofarming Bến Tre", number: "0889 269 777" },
   ],
   emails: [
-    { label: "Sale", address: "sales@chanhthu.com" },
-    { label: "Customer Service", address: "contact@chanhthu.com" },
+    { label: "Sale", address: "sales@Dofarming.com" },
+    { label: "Customer Service", address: "contact@Dofarming.com" },
   ],
   workingHours: "Thứ 2 – Thứ 6: 8:00 - 17:00\nNghỉ thứ 7, chủ nhật và các ngày lễ",
 };
@@ -44,7 +44,7 @@ export default function Contact() {
       <div className="relative h-[40vh] w-full">
         <Image
           src="/images/contact/hero-contact.jpg"
-          alt="Liên hệ Chánh Thu"
+          alt="Liên hệ Dofarming"
           fill
           className="object-cover"
           priority
@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Liên Hệ</h1>
             <p className="text-lg md:text-xl">
-              Kết nối với Chánh Thu
+              Kết nối với Dofarming
             </p>
           </div>
         </div>

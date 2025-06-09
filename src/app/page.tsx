@@ -33,7 +33,7 @@ const products = [
   },
 ];
 
-// Dữ liệu cho các lý do chọn Chánh Thu
+// Dữ liệu cho các lý do chọn Dofarming
 const features = [
     {
         icon: 'https://chanhthu.com/wp-content/uploads/2024/03/farm-tractor.svg',
@@ -209,7 +209,7 @@ export default function Home() {
                 Xây dựng niềm tin để trái cây Việt vươn xa
               </h1>
               <p className="mt-6 text-lg text-gray-600">
-                Chánh Thu với phương châm “Mỗi sản phẩm là một niềm tin”, bằng
+                Dofarming với phương châm “Mỗi sản phẩm là một niềm tin”, bằng
                 cái tâm của người làm nghề lâu năm lĩnh vực kinh doanh trái cây,
                 chúng tôi luôn mong muốn xây dựng dây chuyền sản xuất qui mô,
                 khoa học, đảm bảo chất lượng an toàn vệ sinh thực phẩm.
@@ -301,7 +301,7 @@ export default function Home() {
                 Giá Trị & Sứ Mệnh
               </h3>
               <h2 className="mt-2 text-3xl lg:text-4xl font-extrabold text-gray-800">
-                Công Ty Cổ Phần Tập Đoàn Xuất – Nhập Khẩu Trái Cây Chánh Thu
+                Công Ty Cổ Phần Tập Đoàn Xuất – Nhập Khẩu Trái Cây Dofarming
               </h2>
             </div>
             <div className="border-l-4 border-green-500 pl-6">
@@ -309,13 +309,13 @@ export default function Home() {
                 Chúng tôi đặt tiêu chí chất lượng sản phẩm và niềm tin của
                 khách hàng lên hàng đầu cùng tuyên ngôn “Together We Make
                 Vietnamese Fruit Brand” vững về chất lượng, mạnh về số lượng,
-                xây dựng thương hiệu uy tín, hội nhập thị trường. Chánh Thu đã
+                xây dựng thương hiệu uy tín, hội nhập thị trường. Dofarming đã
                 và đang từng bước đưa thương hiệu trái cây Việt Nam vươn xa
                 trên thị trường thế giới.
               </p>
                <div className="mt-6">
                     <Image src="https://chanhthu.com/wp-content/uploads/2024/03/signature.png" alt="Chữ ký CEO" width={150} height={45} />
-                    <p className="text-sm text-gray-700 font-semibold">CEO Chánh Thu</p>
+                    <p className="text-sm text-gray-700 font-semibold">CEO Dofarming</p>
                </div>
             </div>
           </div>
@@ -342,7 +342,7 @@ export default function Home() {
                      </div>
                  </div>
                  <div>
-                    <h3 className="text-2xl font-extrabold text-gray-800">Vì sao Chánh Thu là lựa chọn của bạn?</h3>
+                    <h3 className="text-2xl font-extrabold text-gray-800">Vì sao Dofarming là lựa chọn của bạn?</h3>
                     <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                         {features.map((feature, index) => (
                              <div key={index} className="flex items-start gap-4">
@@ -393,8 +393,8 @@ export default function Home() {
      <section className="container mx-auto px-4 lg:px-8 pb-16 lg:pb-24">
             <div className="relative rounded-lg overflow-hidden h-[250px] md:h-[450px] flex items-center justify-center bg-video-thumbnail">
                  <Image
-                    src="https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-factory.jpg"
-                    alt="Nhà máy Chánh Thu"
+                    src="/images/thumnailvideo.jpg"
+                    alt="Nhà máy Dofarming"
                     fill
                     className="z-1 object-cover"
                 />
