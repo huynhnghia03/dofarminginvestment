@@ -119,15 +119,15 @@ export default function About() {
                 <h2 className="text-2xl font-bold text-gray-800">Giới thiệu</h2>
               </div>
               <p className="text-gray-600 italic leading-relaxed mb-4">
-                Nhiều năm qua, Công ty Chánh Thu đã cung cấp rất nhiều các sản phẩm trái cây
+                Nhiều năm qua, Công ty Dofarming đã cung cấp rất nhiều các sản phẩm trái cây
                 tươi & trái cây đông lạnh cho nhiều thị trường uy tín trên thế giới.
               </p>
              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-700 leading-relaxed">
                   <p>
-                    Công ty Cổ phần Tập đoàn Xuất – Nhập Khẩu Trái Cây Chánh Thu tiền thân là Công
+                    Công ty Cổ phần Tập đoàn Xuất – Nhập Khẩu Trái Cây Dofarming tiền thân là Công
                     ty TNHH Chành Thu (tại tỉnh Bến Tre) là doanh nghiệp hoạt động trong lĩnh vực xuất
                     khẩu trái cây tươi, trái cây đông lạnh đã có hơn 25 năm kinh nghiệm. Với các nhà máy
-                    tại các tỉnh Bến Tre, Khánh Hòa và Đắk Lắk Tập đoàn Chánh Thu có khả năng cung cấp hơn 
+                    tại các tỉnh Bến Tre, Khánh Hòa và Đắk Lắk Tập đoàn Dofarming có khả năng cung cấp hơn 
                   </p>
                    <p>
                      200.000 tấn trái cây các loại trong năm xuất sang thị trường Mỹ, Nhật, Úc, Châu Âu, Trung Quốc, Hàn Quốc.
@@ -161,8 +161,8 @@ export default function About() {
            <section className="container ">
           <div className="relative w-full h-96 mb-16 rounded-lg overflow-hidden">
              <Image
-                src="	https://chanhthu.com/wp-content/uploads/2024/06/Nong-san-xuat-khau-thi-truong-EU-Sau-rieng.webp"
-                alt="Sầu riêng Chánh Thu"
+                src="/images/about/durian.jpg"
+                alt="Sầu riêng Dofarming"
                 layout="fill"
                 objectFit="cover"
              />
