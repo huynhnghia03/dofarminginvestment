@@ -125,7 +125,7 @@ export default function About() {
              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-700 leading-relaxed">
                   <p>
                     Công ty Cổ phần Tập đoàn Xuất – Nhập Khẩu Trái Cây Dofarming tiền thân là Công
-                    ty TNHH Chành Thu (tại tỉnh Bến Tre) là doanh nghiệp hoạt động trong lĩnh vực xuất
+                    ty TNHH Dofarming (tại tỉnh Bến Tre) là doanh nghiệp hoạt động trong lĩnh vực xuất
                     khẩu trái cây tươi, trái cây đông lạnh đã có hơn 25 năm kinh nghiệm. Với các nhà máy
                     tại các tỉnh Bến Tre, Khánh Hòa và Đắk Lắk Tập đoàn Dofarming có khả năng cung cấp hơn 
                   </p>

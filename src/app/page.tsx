@@ -265,6 +265,7 @@ export default function Home() {
             background-position: center;
             background-repeat: no-repeat;
         }
+          .play-button-ripple::before,
         .play-button-ripple::after {
             content: '';
             position: absolute;
@@ -274,18 +275,20 @@ export default function Home() {
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background-color: transparent;
-            border: 2px solid rgba(255, 255, 255, 0.7);
-            animation: ripple-effect 1.5s infinite;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            animation: ripple-effect 1.5s infinite ease-out;
             z-index: -1;
+        }
+        .play-button-ripple::after {
+            animation-delay: -1s; /* Bắt đầu gợn sóng thứ hai sau 1s */
         }
         @keyframes ripple-effect {
           0% {
-            transform: translate(-50%, -50%) scale(1);
-            opacity: 0.8;
+            transform: translate(-50%, -50%) scale(0.9);
+            opacity: 1;
           }
           100% {
-            transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(2.5);
             opacity: 0;
           }
         }
