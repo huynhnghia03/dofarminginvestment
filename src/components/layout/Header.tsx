@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Search, X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const navigation = [
   { 
@@ -36,14 +37,24 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [currentLang, setCurrentLang] = useState('vi');
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+ const pathname = usePathname();
 
+  // Function to check if route is active
+  const isActiveRoute = (href: string, children?: any[]) => {
+    if (pathname === href) return true;
+    if (children) {
+      return children.some(child => pathname === child.href);
+    }
+    return false;
+  };
   return (
     <>
-    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-xl z-50 max-w-6xl w-[95%]">
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-xl z-11 max-w-6xl w-[95%]">
       <div className="flex items-center justify-between h-20 px-6">
         {/* Mobile Menu Button - Left */}
         <button
-          className="lg:hidden p-2 order-1"
+          className="lg:hidden p-2 order-1 z-60"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -133,33 +144,93 @@ const Header = () => {
           <ul className="flex space-x-1">
             {navigation.map((item) => (
               <li key={item.href} className="relative group">
-                <Link
-                  href={item.href}
-                  className="px-4 py-2 text-gray-700 hover:text-green-600 font-medium uppercase text-sm flex items-center"
-                  onMouseEnter={() => item.children && setActiveDropdown(item.href)}
-                  onMouseLeave={() => setActiveDropdown(null)}
+                <div
+                  onMouseEnter={() => {
+                    setHoveredItem(item.href);
+                    item.children && setActiveDropdown(item.href);
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredItem(null);
+                    !item.children && setActiveDropdown(null);
+                  }}
+                  className="relative"
                 >
-                  {item.name}
-                  {item.children && (
-                    <svg className="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
+                  <Link
+                    href={item.href}
+                    className={`px-4 py-2 font-medium uppercase text-sm flex items-center relative transition-colors duration-300 ${
+                      isActiveRoute(item.href, item.children)
+                        ? 'text-green-600'
+                        : 'text-gray-700 hover:text-green-600'
+                    }`}
+                  >
+                    {item.name}
+                    {item.children && (
+                      <svg className="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                  </Link>
+                  
+                  {/* Active indicator background with ripple effect */}
+                  <div className={`absolute inset-0 rounded-lg transition-all duration-300 -z-10 ${
+                    isActiveRoute(item.href, item.children)
+                      ? ' scale-100 opacity-100'
+                      : ' scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100'
+                  }`}></div>
+                  
+                  {/* Ripple effect rings */}
+                  <div className={`absolute inset-0 rounded-lg transition-all duration-500 -z-20 ${
+                    isActiveRoute(item.href, item.children)
+                      ? ' scale-110 opacity-30 animate-pulse'
+                      : 'scale-100 opacity-0 group-hover:scale-110 group-hover:opacity-20'
+                  }`}></div>
+                  
+                  <div className={`absolute inset-0 rounded-lg transition-all duration-700 -z-30 ${
+                    isActiveRoute(item.href, item.children)
+                      ? ' scale-125 opacity-20'
+                      : 'scale-105 opacity-0 group-hover:scale-125 group-hover:opacity-15 group-hover:animate-ping'
+                  }`}></div>
+                  
+                  <div className={`absolute inset-0 rounded-lg transition-all duration-1000 -z-40 ${
+                    isActiveRoute(item.href, item.children)
+                      ? ' scale-140 opacity-10'
+                      : 'scale-110 opacity-0 group-hover:scale-140 group-hover:opacity-10'
+                  }`}></div>
+                  
+                  {/* Active/Hover indicator dot - Show for active item when not hovering others, or for hovered item */}
+                  {((isActiveRoute(item.href, item.children) && !hoveredItem) || hoveredItem === item.href) && (
+                    <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-2 h-2 rounded-full bg-green-600 scale-100 opacity-100 shadow-lg shadow-green-500/50 transition-all duration-300">
+                      {/* Dot glow rings */}
+                      <div className="absolute inset-0 rounded-full bg-green-500 scale-150 opacity-30 animate-ping transition-all duration-500"></div>
+                      <div className="absolute inset-0 rounded-full bg-green-400 scale-200 opacity-20 transition-all duration-700"></div>
+                      <div className="absolute inset-0 rounded-full bg-green-300 scale-300 opacity-10 animate-pulse transition-all duration-1000"></div>
+                      <div className="absolute inset-0 rounded-full bg-green-200 scale-400 opacity-5 transition-all duration-1200"></div>
+                    </div>
                   )}
-                </Link>
-                {item.children && activeDropdown === item.href && (
-                  <ul className="absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-lg py-2 z-50">
-                    {item.children.map((child) => (
-                      <li key={child.href}>
-                        <Link
-                          href={child.href}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md mx-2"
-                        >
-                          {child.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+
+                  {item.children && activeDropdown === item.href && (
+                    <ul 
+                      className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg py-2 z-50 border border-gray-100"
+                      onMouseEnter={() => setActiveDropdown(item.href)}
+                      onMouseLeave={() => setActiveDropdown(null)}
+                    >
+                      {item.children.map((child) => (
+                        <li key={child.href}>
+                          <Link
+                            href={child.href}
+                            className={`block px-4 py-2 text-sm rounded-md mx-2 transition-colors duration-200 ${
+                              pathname === child.href
+                                ? 'text-green-600 '
+                                : 'text-gray-700 hover:text-green-600 hover:bg-gray-50 '
+                            }`}
+                          >
+                            {child.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </li>
             ))}
           </ul>
@@ -219,68 +290,133 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="lg:hidden bg-white border-t rounded-b-xl">
-          <ul className="px-4 pt-2 pb-4">
-            {navigation.map((item) => (
-              <li key={item.href}>
-                <div className="flex items-center justify-between">
-                  <Link
-                    href={item.href}
-                    className="block py-3 text-gray-700 hover:text-green-600 flex-grow"
-                    onClick={() => !item.children && setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                  {/* Nút mở/đóng submenu cho mobile */}
-                  {item.children && (
-                    <button
-                      onClick={() =>
-                        setActiveDropdown(activeDropdown === item.href ? null : item.href)
-                      }
-                      className="p-2 text-gray-500 hover:text-green-600"
-                      aria-label={`Toggle ${item.name} submenu`}
-                    >
-                      <svg
-                        className={`w-4 h-4 transform transition-transform ${
-                          activeDropdown === item.href ? 'rotate-180' : ''
-                        }`}
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </button>
-                  )}
-                </div>
-                {/* Submenu cho mobile */}
-                {item.children && activeDropdown === item.href && (
-                  <ul className="pl-4 mt-2 space-y-1">
-                    {item.children.map((child) => (
-                      <li key={child.href}>
-                        <Link
-                          href={child.href}
-                          className="block py-2 text-sm text-gray-600 hover:text-green-600 border-l-2 border-gray-200 pl-3 hover:border-green-600"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {child.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      {/* Mobile Navigation Overlay */}
+   
 
       {/* Search Overlay */}
-
-
-
+    
     </header>
+     <div className={`lg:hidden fixed inset-0 z-40 transition-all duration-300 ease-in-out ${
+        isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+      }`}>
+        {/* Backdrop - Updated for lighter overlay */}
+        <div 
+          className={`absolute inset-0 bg-black/70  transition-opacity duration-300 ease-in-out ${
+            isMenuOpen ? 'bg-opacity-80' : 'bg-opacity-0'
+          }`}
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+        
+        {/* Slide Menu */}
+        <div className={`absolute top-0 left-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}>
+            <div className="p-6">
+              {/* Header của menu */}
+              <div className="flex items-center justify-between mb-6">
+                <Image
+                  src="/images/logo.png"
+                  alt="Logo"
+                  width={120}
+                  height={45}
+                  className="h-11 w-auto"
+                />
+                <button
+                  onClick={() => setIsMenuOpen(false)}
+                  className="p-2 hover:bg-gray-100 rounded-full"
+                  aria-label="Close menu"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+
+              {/* Navigation Items */}
+              <ul className="space-y-2">
+                {navigation.map((item) => (
+                  <li key={item.href}>
+                    <div className="flex items-center justify-between">
+                      <Link
+                        href={item.href}
+                        className="block py-3 text-gray-700 hover:text-green-600 flex-grow font-medium"
+                        onClick={() => !item.children && setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                      {/* Nút mở/đóng submenu cho mobile */}
+                      {item.children && (
+                        <button
+                          onClick={() =>
+                            setActiveDropdown(activeDropdown === item.href ? null : item.href)
+                          }
+                          className="p-2 text-gray-500 hover:text-green-600"
+                          aria-label={`Toggle ${item.name} submenu`}
+                        >
+                          <svg
+                            className={`w-4 h-4 transform transition-transform duration-200 ${
+                              activeDropdown === item.href ? 'rotate-180' : ''
+                            }`}
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </button>
+                      )}
+                    </div>
+                    {/* Submenu cho mobile */}
+                    {item.children && (
+                      <ul className={`pl-4 space-y-1 overflow-hidden transition-all duration-300 ${
+                        activeDropdown === item.href ? 'max-h-96 mt-2' : 'max-h-0'
+                      }`}>
+                        {item.children.map((child) => (
+                          <li key={child.href}>
+                            <Link
+                              href={child.href}
+                              className="block py-2 text-sm text-gray-600 hover:text-green-600 border-l-2 border-gray-200 pl-3 hover:border-green-600 transition-colors"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {child.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Language switcher trong mobile menu */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <h3 className="text-sm font-medium text-gray-700 mb-3">Ngôn ngữ</h3>
+                <div className="space-y-2">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      className={`flex items-center space-x-3 w-full px-3 py-2 text-sm rounded-md transition-colors ${
+                        currentLang === lang.code 
+                          ? 'bg-green-50 text-green-600' 
+                          : 'text-gray-700 hover:bg-gray-50'
+                      }`}
+                      onClick={() => {
+                        setCurrentLang(lang.code);
+                      }}
+                    >
+                      <Image
+                        src={lang.flag}
+                        alt={lang.name}
+                        width={20}
+                        height={14}
+                        className="rounded"
+                      />
+                      <span>{lang.name}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     
       <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-300 ${isSearchOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
           <div className="absolute inset-0 bg-black/70" onClick={() => setIsSearchOpen(false)}></div>
           
@@ -306,7 +442,7 @@ const Header = () => {
               <X className="w-6 h-6"/>
           </button>
       </div>
-      </>
+    </>
   );
 };
 
