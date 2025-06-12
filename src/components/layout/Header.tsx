@@ -18,7 +18,7 @@ const navigation = [
       { name: 'Giới thiệu', href: '/about' },
       { name: 'Chứng nhận tiêu chuẩn', href: '/about/certificates' },
       { name: 'Lịch sử & định hướng phát triển', href: '/about/history' },
-      { name: 'Thành viên ban quản trị', href: '/about/management' },
+      // { name: 'Thành viên ban quản trị', href: '/about/management' },
     ]
   },
   { name: 'Sản phẩm', href: '/products' },

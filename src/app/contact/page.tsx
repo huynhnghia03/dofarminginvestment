@@ -1,211 +1,173 @@
-"use client";
 
-import Image from "next/image";
-import { MapPinIcon, PhoneIcon, EnvelopeIcon, ClockIcon } from "@heroicons/react/24/outline";
+import { MapPin, Phone, Mail } from 'lucide-react';
 
-const locations = [
-  {
-    name: "Văn phòng đại diện HCM",
-    address: "Room 203, Floor 02, Saigon Paragon Building, 03 Nguyen Luong Bang, Tan Phu Ward, District 7, HCMC",
-    mapUrl: "https://goo.gl/maps/5VQbhDVjnTvhxzu19",
-  },
-  {
-    name: "Nhà máy 1 - Dofarming Bến Tre",
-    address: "Ấp Nhơn Phú, Xã Hòa Nghĩa, Huyện Chợ Lách, Tỉnh Bến Tre",
-    mapUrl: "https://goo.gl/maps/3eBHeJ9VNxvy6x6z8",
-  },
-  {
-    name: "Nhà máy 2 - Dofarming Nha Trang",
-    address: "KCN Suối Dầu, Xã Suối Tân, Huyện Cam Lâm, Tỉnh Khánh Hòa",
-  },
-  {
-    name: "Nhà máy 3 - Dofarming Đăk Lăk",
-    address: "Thôn Nam Kỳ, Xã Ea Drông, Huyện Cư M'gar, Tỉnh Đăk Lăk",
-    mapUrl: "https://goo.gl/maps/GFp9jmS8ugoNNNu49",
-  },
-];
-
-const contactInfo = {
-  phones: [
-    { label: "Văn phòng đại diện HCM", number: "028 6278 8887" },
-    { label: "Văn phòng Dofarming Bến Tre", number: "0889 269 777" },
-  ],
-  emails: [
-    { label: "Sale", address: "sales@Dofarming.com" },
-    { label: "Customer Service", address: "contact@Dofarming.com" },
-  ],
-  workingHours: "Thứ 2 – Thứ 6: 8:00 - 17:00\nNghỉ thứ 7, chủ nhật và các ngày lễ",
-};
 
 export default function Contact() {
   return (
-    <main className="flex min-h-screen flex-col bg-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative h-[40vh] w-full">
-        <Image
-          src="/images/contact/hero-contact.jpg"
-          alt="Liên hệ Dofarming"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Liên Hệ</h1>
-            <p className="text-lg md:text-xl">
-              Kết nối với Dofarming
-            </p>
-          </div>
+      <div 
+        className="relative h-64 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')"
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+          <h1 className="text-4xl font-bold mb-4">Liên hệ</h1>
+          <nav className="text-sm">
+            <span className="hover:text-green-400 cursor-pointer">Home</span>
+            <span className="mx-2">/</span>
+            <span>Liên hệ</span>
+          </nav>
         </div>
       </div>
 
-      {/* Contact Information */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Phone Numbers */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="flex items-center mb-6">
-                <PhoneIcon className="h-6 w-6 text-primary mr-3" />
-                <h2 className="text-xl font-bold">Hotline</h2>
+      {/* Contact Info Section */}
+      <div className="py-16 px-4 max-w-7xl mx-auto">
+        <div className="mb-16">
+          {/* Top Row - Address and Hotline */}
+           {/* <div className="bg-gray-50 min-h-screen p-8"> */}
+      <div className="max-w-7xl mx-auto">
+        {/* Main grid container */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          {/* Left Column: Address Card */}
+          <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm flex flex-col">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-white ring-4 ring-green-100">
+                <MapPin className="w-8 h-8 text-green-600" />
               </div>
-              <div className="space-y-4">
-                {contactInfo.phones.map((phone, index) => (
-                  <div key={index}>
-                    <p className="text-gray-600">{phone.label}</p>
-                    <a
-                      href={`tel:${phone.number.replace(/\s/g, "")}`}
-                      className="text-primary hover:text-secondary font-medium"
-                    >
-                      {phone.number}
-                    </a>
-                  </div>
-                ))}
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">Address</h3>
+              <div className="text-gray-500 space-y-4 text-sm text-center">
+                <div>
+                  <p className="font-semibold text-green-700 mb-1">Representative Office</p>
+                  <p>Room 203, Floor 02, Saigon Paragon Building, No. 03 Nguyen Luong Bang Street, Tan Phu Ward, District 7, Ho Chi Minh City.</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-green-700 mb-1">Factory 1 – Chanh Thu Ben Tre</p>
+                  <p>Nhon Phu hamlet, Hoa Nghia commune, Cho Lach District, Ben Tre Province, Vietnam</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-green-700 mb-1">Factory 2 – Chanh Thu Nha Trang</p>
+                  <p>Suoi Dau Industrial Zone, Suoi Tan Commune, Cam Lam District, Khanh Hoa Province, Vietnam</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-green-700 mb-1">Factory 3 – Chanh Thu Dak Lak</p>
+                  <p>Nam Ky Village, Ea Drong Commune, Cu M'gar District, Dak Lak Province, Vietnam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Hotline and Email Cards */}
+          <div className="space-y-8">
+            {/* Hotline Card */}
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-white ring-4 ring-green-100">
+                  <Phone className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Hotline</h3>
+                <div className="text-gray-500 space-y-2 text-sm">
+                  <p><span className="font-medium text-gray-700">Văn phòng đại diện HCM:</span> <span className="text-green-600 font-semibold">028 6278 8887</span></p>
+                  <p><span className="font-medium text-gray-700">Văn phòng Dofarming Bến Tre:</span> <span className="text-green-600 font-semibold">0889 269 777</span></p>
+                </div>
               </div>
             </div>
 
-            {/* Email Addresses */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="flex items-center mb-6">
-                <EnvelopeIcon className="h-6 w-6 text-primary mr-3" />
-                <h2 className="text-xl font-bold">Email</h2>
+            {/* Email Card */}
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-white ring-4 ring-green-100">
+                  <Mail className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Email</h3>
+                <div className="text-gray-500 space-y-2 text-sm">
+                  <p><span className="font-medium text-gray-700">Sale:</span> <span className="text-green-600 font-semibold">sales@Dofarming.com</span></p>
+                  <p><span className="font-medium text-gray-700">Customer Service:</span> <span className="text-green-600 font-semibold">contact@Dofarming.com</span></p>
+                  <p><span className="font-medium text-gray-700">Website:</span> <span className="text-green-600 font-semibold">www.Dofarming.com</span></p>
+                </div>
               </div>
-              <div className="space-y-4">
-                {contactInfo.emails.map((email, index) => (
-                  <div key={index}>
-                    <p className="text-gray-600">{email.label}</p>
-                    <a
-                      href={`mailto:${email.address}`}
-                      className="text-primary hover:text-secondary font-medium"
-                    >
-                      {email.address}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Working Hours */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="flex items-center mb-6">
-                <ClockIcon className="h-6 w-6 text-primary mr-3" />
-                <h2 className="text-xl font-bold">Giờ làm việc</h2>
-              </div>
-              <p className="text-gray-600 whitespace-pre-line">{contactInfo.workingHours}</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    {/* </div> */}
 
-      {/* Locations */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Địa Điểm</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {locations.map((location, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-sm">
-                <div className="flex items-start space-x-4">
-                  <MapPinIcon className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-bold mb-2">{location.name}</h3>
-                    <p className="text-gray-600 mb-4">{location.address}</p>
-                    {location.mapUrl && (
-                      <a
-                        href={location.mapUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:text-secondary font-medium"
-                      >
-                        Xem bản đồ →
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Bottom Row - Email (Centered) */}
+       
+        </div>
+
+        {/* Map Section */}
+        <div className="mb-16">
+          <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.665546822394!2d106.72230731744386!3d10.759830089389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2s03%20Nguyễn%20Lương%20Bằng%2C%20Tân%20Phú%2C%20Quận%207%2C%20Thành%20phố%20Hồ%20Chí%20Minh%2C%20Vietnam!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
-      </section>
 
-      {/* Contact Form */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Gửi Tin Nhắn</h2>
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                    Họ và tên
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                    Số điện thoại
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Tin nhắn
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
-                />
-              </div>
+        {/* Contact Form Section */}
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Liên hệ & Hỗ trợ</h2>
+            <p className="text-gray-600">Quý khách vui lòng để lại tin nhắn, Dofarming sẽ liên lạc trong thời gian sớm nhất.</p>
+          </div>
+
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <input
+                type="text"
+                placeholder="Tên bạn"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                placeholder="Số điện thoại"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Tiêu đề"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              />
+            </div>
+            <div className="md:col-span-2">
+              <textarea
+                rows={6}
+                placeholder="Nhập nội dung"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent resize-vertical"
+              ></textarea>
+            </div>
+            <div className="md:col-span-2 text-center">
               <button
                 type="submit"
-                className="w-full bg-primary hover:bg-secondary text-white font-medium py-3 rounded-lg transition-colors"
+                className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
               >
                 Gửi Tin Nhắn
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }
