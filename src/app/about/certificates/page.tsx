@@ -70,7 +70,7 @@ export default function CertificatesPage() {
                 Với phương châm "Mỗi sản phẩm là một niềm tin", chúng tôi cam kết mạnh mẽ về an 
                 toàn và sinh thực phẩm ở mọi khâu: từ trồng trọt đến chế biến đóng gói và vận chuyển. 
                 Sản phẩm của chúng tôi chứng tôi có cam kết đặng cấp các sản phẩm an toàn, tươi ngon 
-                phù hợp với từng khách hàng và tiêu dùng, các nhà máy của Chanh Thư đều áp dụng 
+                phù hợp với từng khách hàng và tiêu dùng, các nhà máy của Dofarming đều áp dụng 
                 hệ thống quản lý chất lượng và đảm bảo chất lượng và sinh an toàn thực phẩm, 
                 đạt ứng tiêu chuẩn quốc tế và đầu các chứng nhận như FSSC 22000, Halal, HACCP
               </p>
@@ -94,11 +94,11 @@ export default function CertificatesPage() {
                 <div>
                   <h4 className="text-xl font-bold text-green-600 mb-3">HACCP</h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Tại Chanh Thư, chúng tôi kiểm soát quy trình sản xuất một cách nghiêm ngặt từ khâu 
+                    Tại Dofarming, chúng tôi kiểm soát quy trình sản xuất một cách nghiêm ngặt từ khâu 
                     ban đầu, phân tích mối nguy độ âm bảo an toàn thực phẩm trong hoạt động của mình. 
                     Những sản phẩm đạt tiêu chuẩn HACCP về hệ thống quản lý chất lượng do tự ban CODEX 
                     (tổ chức do FAO và WHO thành lập) phát triển sẽ bảo đảm được mức độ an toàn về sinh 
-                    thực phẩm, tạo niềm tin vệ chất lượng sản phẩm trái cây Chanh Thư - Made in 
+                    thực phẩm, tạo niềm tin vệ chất lượng sản phẩm trái cây Dofarming - Made in 
                     Vietnam cho đối tác và khách hàng
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export default function CertificatesPage() {
                   <p className="text-gray-700 leading-relaxed">
                     Sản phẩm được đóng gói theo tiêu chuẩn FSSC 22000 để xuất khẩu đi những thị trường khó tính 
                     như Mỹ, Úc, New Zealand. Đạt vệ trải cây được nuôi trồng và chăm sóc có lý quản trường hợp hệ thống 
-                    quản lý còn quan trọng hơn. Không những chú trọng vào quá trình chung thông, Chanh Thư Group luôn chú trọng 
+                    quản lý còn quan trọng hơn. Không những chú trọng vào quá trình chung thông, Dofarming Group luôn chú trọng 
                     vào quá trình hệ thống chế biến và bảo quản sản phẩm. Chúng tôi đảm bảo an toàn thực phẩm thông 
                     qua việc xác định, đánh giá và kiểm soát các rủi ro, mối nguy trong suốt quá trình chế biến, sản xuất, 
                     đóng gói, bảo quản, vận chuyển và phân phối sản phẩm đến tay khách hàng
