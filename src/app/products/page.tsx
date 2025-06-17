@@ -73,14 +73,13 @@ export default function Products() {
     <>
     <style jsx global>{`
          .bg-video-thumbnail {
-            background-image: url('/images/about/coconut.png');
+            background-image: url('/images/products/header-bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-position: 0% 0%;
     }
-        .play-button-ripple {
-            position: relative;
-        }
+     
              .separate {
             font-size: 0; /* Ẩn nội dung văn bản bên trong */
             display: inline-block;
@@ -94,33 +93,7 @@ export default function Products() {
             border-top-left-radius: 6px;
             border-bottom-right-radius: 6px;
         }
-        .play-button-ripple::before,
-        .play-button-ripple::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            animation: ripple-effect 1.5s infinite ease-out;
-            z-index: -1;
-        }
-        .play-button-ripple::after {
-            animation-delay: -1s; /* Bắt đầu gợn sóng thứ hai sau 1s */
-        }
-        @keyframes ripple-effect {
-          0% {
-            transform: translate(-50%, -50%) scale(0.9);
-            opacity: 1;
-          }
-          100% {
-            transform: translate(-50%, -50%) scale(2.5);
-            opacity: 0;
-          }
-        }
+       
       `}</style>
     <div className="min-h-screen bg-white">
       {/* Hero Section */}

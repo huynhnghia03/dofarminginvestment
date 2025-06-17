@@ -189,53 +189,6 @@ export default function Home() {
  
      <div className="bg-white">
       {/* Hero Section */}
-    {/* <section className="relative container mx-auto px-4 lg:px-8 py-16 lg:py-24 overflow-hidden">
-          <div className="absolute top-0 right-0 -z-10 opacity-50">
-              <Image src="https://chanhthu.com/wp-content/uploads/2024/03/about-shape.png" width={624} height={700} alt="background shape"/>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div className="relative z-10">
-               <div className="absolute top-[-5%] left-[5%] w-28 h-28 -z-10 animate-pulse">
-                  <Image src="https://chanhthu.com/wp-content/uploads/2024/03/durian.png" layout="fill" objectFit="contain" alt="durian icon"/>
-               </div>
-               <div className="absolute bottom-[20%] left-[-5%] w-24 h-24 -z-10 animate-pulse delay-300">
-                  <Image src="https://chanhthu.com/wp-content/uploads/2024/03/guava.png" layout="fill" objectFit="contain" alt="guava icon"/>
-               </div>
-               <div className="absolute top-[10%] right-[10%] w-16 h-16 -z-10 animate-pulse delay-500">
-                  <Image src="https://chanhthu.com/wp-content/uploads/2024/03/dragon-fruit.png" layout="fill" objectFit="contain" alt="dragon fruit icon"/>
-               </div>
-
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight">
-                Xây dựng niềm tin để trái cây Việt vươn xa
-              </h1>
-              <p className="mt-6 text-lg text-gray-600">
-                Dofarming với phương châm “Mỗi sản phẩm là một niềm tin”, bằng
-                cái tâm của người làm nghề lâu năm lĩnh vực kinh doanh trái cây,
-                chúng tôi luôn mong muốn xây dựng dây chuyền sản xuất qui mô,
-                khoa học, đảm bảo chất lượng an toàn vệ sinh thực phẩm.
-              </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/san-pham"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Sản phẩm <ChevronRight className="w-5 h-5 ml-2" />
-                </Link>
-                <Link
-                  href="/gioi-thieu"
-                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-green-600 text-green-600 font-semibold rounded-full hover:bg-green-600 hover:text-white transition-colors duration-300"
-                >
-                  Giới thiệu <ChevronRight className="w-5 h-5 ml-2" />
-                </Link>
-              </div>
-            </div>
-            <div className="mt-12 lg:mt-0">
-               <ClientOnly>
-                    <HeroSlider />
-               </ClientOnly>
-            </div>
-          </div>
-        </section> */}
         <style jsx global>{`
         .slider-mask-container {
             width: 100%;
@@ -383,7 +336,7 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <Link
-              href="/san-pham"
+              href="/products"
               className="inline-flex items-center justify-center px-8 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-colors duration-300"
             >
               Xem sản phẩm khác <ChevronRight className="w-5 h-5 ml-2" />

@@ -31,6 +31,7 @@ export default function About() {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-position: 0% 0%;
     }
         .play-button-ripple {
             position: relative;
@@ -175,10 +176,10 @@ export default function About() {
 
           {/* Certification Button */}
           <div className="text-center mt-16">
-            <button className="group bg-green-600 text-white font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all duration-300 hover:bg-green-700 hover:shadow-lg">
+            <Link href="/about/certificates" className="group bg-green-600 text-white font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all duration-300 hover:bg-green-700 hover:shadow-lg">
               Chứng nhận tiêu chuẩn
               <ArrowIcon />
-            </button>
+            </Link>
           </div>
         </div>
       </main>

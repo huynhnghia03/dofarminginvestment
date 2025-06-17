@@ -1,26 +1,53 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function CertificatesPage() {
   return (
+       <>
+    <style jsx global>{`
+         .bg-video-thumbnail {
+            background-image: url('/images/about/dofarming-factory.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+    }
+     
+             .separate {
+            font-size: 0; /* Ẩn nội dung văn bản bên trong */
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #209e2e;
+            opacity: 1;
+            margin: 0 12px;
+            position: relative; /* Thêm position relative để căn chỉnh */
+            top: -2px; /* Căn chỉnh vị trí */
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+       
+      `}</style>
      <div className="bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-green-600 to-green-700 text-white py-20">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Chứng nhận tiêu chuẩn
-          </h1>
-          <nav className="text-sm opacity-90">
-            <span>Home</span>
-            <span className="mx-2">•</span>
-            <span>Giới thiệu</span>
-            <span className="mx-2">•</span>
-            <span>Chứng nhận tiêu chuẩn</span>
-          </nav>
+     
+        <div className="relative h-64 md:h-80 w-full">
+            <div className="bg-video-thumbnail absolute inset-0 bg-cover bg-center  bg-video-thumbnail">
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div className="absolute inset-0 bg-opacity-30 flex flex-col items-center justify-center text-white min-h-[430px]">
+              <h1 className="text-4xl md:text-5xl font-bold">Chứng nhận tiêu chuẩn</h1>
+              <nav className="mt-2 text-lg flex items-center">
+                <Link href="/">Home</Link>
+                <span className="separate"></span>
+                  <Link href="/about">Giới thiệu</Link>
+                  <span className="separate"></span>
+                  <span>Chứng nhận tiêu chuẩn</span>
+              </nav>
+            </div>
         </div>
-      </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
@@ -191,14 +218,15 @@ export default function CertificatesPage() {
 
         {/* CTA Button */}
         <div className="text-center mt-12">
-          <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300 inline-flex items-center">
+          <Link href="/about/history" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300 inline-flex items-center">
             Lịch sử & định hướng phát triển
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
+    </>
   );
 }

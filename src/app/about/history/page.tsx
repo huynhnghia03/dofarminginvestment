@@ -1,5 +1,7 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
   const timelineEvents = [
     {
       year: 2022,
@@ -76,23 +78,48 @@ import Image from 'next/image';
   ];
 export default function HistoryPage() {
   return (
+    <>
+     <style jsx global>{`
+         .bg-video-thumbnail {
+            background-image: url('/images/thumnailvideo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+    }
+     
+             .separate {
+            font-size: 0; /* Ẩn nội dung văn bản bên trong */
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #209e2e;
+            opacity: 1;
+            margin: 0 12px;
+            position: relative; /* Thêm position relative để căn chỉnh */
+            top: -2px; /* Căn chỉnh vị trí */
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+       
+      `}</style>
 <div className="bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Lịch sử & định hướng phát triển
-          </h1>
-          <nav className="text-sm opacity-90">
-            <span>Home</span>
-            <span className="mx-2">•</span>
-            <span>Giới thiệu</span>
-            <span className="mx-2">•</span>
-            <span>Lịch sử & định hướng phát triển</span>
-          </nav>
+       <div className="relative h-64 md:h-80 w-full">
+            <div className="bg-video-thumbnail absolute inset-0 bg-cover bg-center  bg-video-thumbnail">
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div className="absolute inset-0 bg-opacity-30 flex flex-col items-center justify-center text-white min-h-[430px]">
+              <h1 className="text-4xl md:text-5xl font-bold">Lịch sử & định hướng phát triển</h1>
+              <nav className="mt-2 text-lg flex items-center">
+                <Link href="/">Home</Link>
+                <span className="separate"></span>
+                  <Link href="/about">Giới thiệu</Link>
+                  <span className="separate"></span>
+                  <span>Lịch sử & định hướng phát triển</span>
+              </nav>
+            </div>
         </div>
-      </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
@@ -189,7 +216,7 @@ export default function HistoryPage() {
               <h3 className="text-xl font-bold text-gray-800 mb-6">Giá trị cốt lõi</h3>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <Image
-                  src="/api/placeholder/500/300"
+                  src="https://chanhthu.com/wp-content/uploads/2024/06/chanh-thu-orientation-1.png"
                   alt="Core Values"
                   width={500}
                   height={300}
@@ -238,5 +265,6 @@ export default function HistoryPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

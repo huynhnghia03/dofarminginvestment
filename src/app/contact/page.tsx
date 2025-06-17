@@ -1,27 +1,79 @@
-
+"use client";
+import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 
 export default function Contact() {
   return (
+    <>
+     <style jsx global>{`
+         .bg-video-thumbnail {
+            background-image: url('/images/contact/header-bg-3.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+    }
+        .play-button-ripple {
+            position: relative;
+        }
+             .separate {
+            font-size: 0; /* Ẩn nội dung văn bản bên trong */
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #209e2e;
+            opacity: 1;
+            margin: 0 12px;
+            position: relative; /* Thêm position relative để căn chỉnh */
+            top: -2px; /* Căn chỉnh vị trí */
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        .play-button-ripple::before,
+        .play-button-ripple::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            animation: ripple-effect 1.5s infinite ease-out;
+            z-index: -1;
+        }
+        .play-button-ripple::after {
+            animation-delay: -1s; /* Bắt đầu gợn sóng thứ hai sau 1s */
+        }
+        @keyframes ripple-effect {
+          0% {
+            transform: translate(-50%, -50%) scale(0.9);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(2.5);
+            opacity: 0;
+          }
+        }
+      `}</style>
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div 
-        className="relative h-64 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')"
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-          <h1 className="text-4xl font-bold mb-4">Liên hệ</h1>
-          <nav className="text-sm">
-            <span className="hover:text-green-400 cursor-pointer">Home</span>
-            <span className="mx-2">/</span>
-            <span>Liên hệ</span>
-          </nav>
+        <div className="relative h-64 md:h-80 w-full">
+            <div className="bg-video-thumbnail absolute inset-0 bg-cover bg-center  bg-video-thumbnail">
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div className="absolute inset-0 bg-opacity-30 flex flex-col items-center justify-center text-white min-h-[430px]">
+              <h1 className="text-4xl md:text-5xl font-bold">Liên Hệ</h1>
+              <nav className="mt-2 text-lg flex items-center">
+                <Link href="/">Home</Link>
+                <span className="separate"></span>
+                <span>Liên Hệ</span>
+              </nav>
+            </div>
         </div>
-      </div>
 
       {/* Contact Info Section */}
       <div className="py-16 px-4 max-w-7xl mx-auto">
@@ -169,5 +221,15 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }
+
+
+
+
+
+
+
+
+

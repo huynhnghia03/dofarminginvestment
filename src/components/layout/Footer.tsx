@@ -238,6 +238,8 @@
 // };
 
 // export default Footer;
+"use client";
+import React from 'react';
 import { ArrowUpRightSquare, Mail, MapPin, Phone, Smartphone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -249,7 +251,7 @@ const news = [
     link: '/news/tuyen-dung-chuyen-vien-thu-mua'
   },
   {
-    title: 'Thủ tướng Phạm Minh Chính cùng Thủ tướng Hà Lan Mark Rutte thăm vựa trái cây Dofarming',
+    title: 'Thủ tướng Phạm Minh Chính cùng Thủ tướng',
     date: '2024-10-14',
     link: '/news/thu-tuong-tham-chanh-thu'
   },
@@ -269,7 +271,26 @@ const news = [
         <div className="h-8 flex items-center">{children}</div>
     );
 const Footer = () => {
+  
   return (
+    <>
+      <style jsx global>{`
+  
+             .separate {
+            font-size: 0; /* Ẩn nội dung văn bản bên trong */
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #209e2e;
+            opacity: 1;
+            margin: 0 12px;
+            position: relative; /* Thêm position relative để căn chỉnh */
+            top: -2px; /* Căn chỉnh vị trí */
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        
+      `}</style>
      <footer className="bg-white">
       <div className="bg-[#F9FFF8] py-16">
         <div className="container mx-auto px-4">
@@ -331,8 +352,8 @@ const Footer = () => {
                     href={item.link}
                     className="block group"
                   >
-                    <div className="flex items-start space-x-3">
-                      <Image src="https://chanhthu.com/wp-content/uploads/2024/03/icon-logo.png" width={20} height={20} alt="icon" className="mt-1"/>
+                    <div className="flex items-center align-middle  space-x-2">
+                      <span className="separate"></span>
                       <div>
                         <p className="group-hover:text-green-600 transition-colors line-clamp-2 leading-tight">
                           {item.title}
@@ -377,28 +398,23 @@ const Footer = () => {
           </div>
         </div>
       </div>
-       <div className="bg-[#5c5c5c] text-[#ffffff80] absolute-footer medium-text-center text-center py-4">
-           <div className="flex items-center space-x-2 justify-center mb-4">
-                <PaymentIcon><Image  width={150}
-              height={56} alt="ATM" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/atm.svg" className="h-5"/></PaymentIcon>
-                <PaymentIcon><Image  width={150}
-              height={56} alt="Bank Transfer" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/cod.svg" className="h-5"/></PaymentIcon>
-                <PaymentIcon><Image  width={150}
-              height={56} alt="JCB" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/jcb.svg" className="h-5"/></PaymentIcon>
-                 <PaymentIcon><Image  width={150}
-              height={56} alt="MasterCard" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/mc.svg" className="h-5"/></PaymentIcon>
-                <PaymentIcon><Image  width={150}
-              height={56} alt="Visa" src="https://chanhthu.com/wp-content/plugins/flatsome/assets/img/payment-icons/visa.svg" className="h-5"/></PaymentIcon>
-            
-            </div>
+     <div className="bg-[#5c5c5c] text-[#ffffff80] absolute-footer medium-text-center text-center py-4">
+    
+    <div className="flex items-center justify-center gap-2 mb-4">
+         <PaymentIcon><Image width={40} height={20} alt="ATM" src="atm.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+        <PaymentIcon><Image width={40} height={20} alt="Bank Transfer" src="bank-transfer.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+        <PaymentIcon><Image width={40} height={20} alt="JCB" src="jcb.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+        <PaymentIcon><Image width={40} height={20} alt="MasterCard" src="mastercard.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+        <PaymentIcon><Image width={40} height={20} alt="Visa" src="visa.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+    </div>
 
-            <div className="mb-4 md:mb-0 ">
-                <p>Copyright 2025 © CÔNG TY CỔ PHẦN TẬP ĐOÀN XUẤT - NHẬP KHẨU TRÁI CÂY DOFARMING</p>
-            </div>
-  
-           
-       </div>
+    <div className="mb-4 md:mb-0">
+        <p>Copyright 2025 © CÔNG TY CỔ PHẦN TẬP ĐOÀN XUẤT - NHẬP KHẨU TRÁI CÂY DOFARMING</p>
+    </div>
+    
+</div>
     </footer>
+    </>
   );
 };
 
