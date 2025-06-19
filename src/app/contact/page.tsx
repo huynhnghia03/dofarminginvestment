@@ -93,20 +93,24 @@ export default function Contact() {
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Address</h3>
               <div className="text-gray-500 space-y-4 text-sm text-center">
                 <div>
-                  <p className="font-semibold text-green-700 mb-1">Representative Office</p>
-                  <p>Room 203, Floor 02, Saigon Paragon Building, No. 03 Nguyen Luong Bang Street, Tan Phu Ward, District 7, Ho Chi Minh City.</p>
+                  <p className="font-semibold text-green-700 mb-1">Representative Address</p>
+                  <p>567 Bilyana road - Murray upper - QLD - 4854.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-green-700 mb-1">Factory 1 – Chanh Thu Ben Tre</p>
-                  <p>Nhon Phu hamlet, Hoa Nghia commune, Cho Lach District, Ben Tre Province, Vietnam</p>
+                  <p className="font-semibold text-green-700 mb-1">Address 2</p>
+                  <p>301 Mountainview road - airville - QLD- 4807.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-green-700 mb-1">Factory 2 – Chanh Thu Nha Trang</p>
-                  <p>Suoi Dau Industrial Zone, Suoi Tan Commune, Cam Lam District, Khanh Hoa Province, Vietnam</p>
+                  <p className="font-semibold text-green-700 mb-1">Address 3</p>
+                  <p>75 Trembath road - Horseshoe lagoon - QLD- 4809.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-green-700 mb-1">Factory 3 – Chanh Thu Dak Lak</p>
-                  <p>Nam Ky Village, Ea Drong Commune, Cu M'gar District, Dak Lak Province, Vietnam</p>
+                  <p className="font-semibold text-green-700 mb-1">Address 4</p>
+                  <p>103 Trembath road - Horseshoe lagoon - QLD- 4809.</p>
+                </div>
+                 <div>
+                  <p className="font-semibold text-green-700 mb-1">Address 5</p>
+                  <p>182 homestead road - Frederick field- QLD 4806.</p>
                 </div>
               </div>
             </div>
@@ -122,8 +126,8 @@ export default function Contact() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">Hotline</h3>
                 <div className="text-gray-500 space-y-2 text-sm">
-                  <p><span className="font-medium text-gray-700">Văn phòng đại diện HCM:</span> <span className="text-green-600 font-semibold">028 6278 8887</span></p>
-                  <p><span className="font-medium text-gray-700">Văn phòng Dofarming Bến Tre:</span> <span className="text-green-600 font-semibold">0889 269 777</span></p>
+                  <p><span className="font-medium text-gray-700">Văn phòng đại diện:</span> <span className="text-green-600 font-semibold">028 6278 8887</span></p>
+                  <p><span className="font-medium text-gray-700">Văn phòng Dofarming:</span> <span className="text-green-600 font-semibold">0889 269 777</span></p>
                 </div>
               </div>
             </div>
@@ -136,9 +140,9 @@ export default function Contact() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">Email</h3>
                 <div className="text-gray-500 space-y-2 text-sm">
-                  <p><span className="font-medium text-gray-700">Sale:</span> <span className="text-green-600 font-semibold">sales@Dofarming.com</span></p>
-                  <p><span className="font-medium text-gray-700">Customer Service:</span> <span className="text-green-600 font-semibold">contact@Dofarming.com</span></p>
-                  <p><span className="font-medium text-gray-700">Website:</span> <span className="text-green-600 font-semibold">www.Dofarming.com</span></p>
+                  <p><span className="font-medium text-gray-700">Sale:</span> <span className="text-green-600 font-semibold">Hung.do@dofarminginvestment.com</span></p>
+                  <p><span className="font-medium text-gray-700">Customer Service:</span> <span className="text-green-600 font-semibold">Hung.do@dofarminginvestment.com</span></p>
+                  <p><span className="font-medium text-gray-700">Website:</span> <span className="text-green-600 font-semibold"> www.dofarming.com</span></p>
                 </div>
               </div>
             </div>
@@ -155,7 +159,7 @@ export default function Contact() {
         <div className="mb-16">
           <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.665546822394!2d106.72230731744386!3d10.759830089389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2s03%20Nguyễn%20Lương%20Bằng%2C%20Tân%20Phú%2C%20Quận%207%2C%20Thành%20phố%20Hồ%20Chí%20Minh%2C%20Vietnam!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.044026963282!2d145.94120541514442!3d-18.014665687680577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6baffd44f74f36f7%3A0x98c190ab53556a36!2s567%20Bilyana%20Rd%2C%20Murray%20Upper%20QLD%204854%2C%20Australia!5e0!3m2!1sen!2sau!4v1718785412345"
               width="100%"
               height="100%"
               style={{ border: 0 }}

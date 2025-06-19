@@ -243,53 +243,38 @@ import React from 'react';
 import { ArrowUpRightSquare, Mail, MapPin, Phone, Smartphone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from '../../contexts/LanguageContext'; // 1. Import hook
 
-const news = [
-  {
-    title: '[Tin mới] Tuyển dụng Chuyên viên Thu mua',
-    date: '2024-11-26',
-    link: '/news/tuyen-dung-chuyen-vien-thu-mua'
-  },
-  {
-    title: 'Thủ tướng Phạm Minh Chính cùng Thủ tướng',
-    date: '2024-10-14',
-    link: '/news/thu-tuong-tham-chanh-thu'
-  },
-  {
-    title: 'Chuyển đổi số hướng tới nông nghiệp thông minh',
-    date: '2023-12-02',
-    link: '/news/chuyen-doi-so'
-  },
-  {
-    title: 'Mùa sầu riêng hốt lộc: Người trạnh giành, kẻ thờ ơ',
-    date: '2023-11-30',
-    link: '/news/mua-sau-rieng'
-  }
-];
+// const PaymentIcon = ({ children }: { children: React.ReactNode }) => (
+//     <div className="h-8 flex items-center">{children}</div>
+// );
+const PaymentIcon = ({ children }: { children: React.ReactNode }) => (
 
-    const PaymentIcon = ({ children }: { children: React.ReactNode }) => (
-        <div className="h-8 flex items-center">{children}</div>
-    );
+<div className="h-8 flex items-center">{children}</div>
+
+);
 const Footer = () => {
+  const { t, language } = useLanguage(); // 2. Sử dụng hook để lấy hàm dịch và ngôn ngữ hiện tại
   
+  // 3. Lấy danh sách tin tức từ file JSON thông qua hàm t()
+  const news = t('footer.news_list') || [];
+
   return (
     <>
       <style jsx global>{`
-  
              .separate {
-            font-size: 0; /* Ẩn nội dung văn bản bên trong */
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background: #209e2e;
-            opacity: 1;
-            margin: 0 12px;
-            position: relative; /* Thêm position relative để căn chỉnh */
-            top: -2px; /* Căn chỉnh vị trí */
-            border-top-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-        }
-        
+                font-size: 0;
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background: #209e2e;
+                opacity: 1;
+                margin: 0 12px;
+                position: relative;
+                top: -2px;
+                border-top-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
       `}</style>
      <footer className="bg-white">
       <div className="bg-[#F9FFF8] py-16">
@@ -297,26 +282,24 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Liên hệ */}
             <div>
-              <h3 className="text-xl font-semibold mb-6">Liên hệ</h3>
+              <h3 className="text-xl font-semibold mb-6">{t('footer.contact')}</h3>
               <div className="space-y-4 text-gray-700">
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-10 h-10 text-green-600 flex-shrink-0 mt-1" />
-                  <p>
-                    Room 203, Floor 02, Saigon Paragon Building, No. 03 Nguyen Luong Bang Street, Tan Phu Ward, District 7, Ho Chi Minh City.
-                  </p>
+                  <p>{t('footer.address')}</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Smartphone className="w-6 h-6 text-green-600 flex-shrink-0" />
-                  <p>MST: 0316940426</p>
+                  <p>{t('footer.tax_code')}</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-6 h-6 text-green-600 flex-shrink-0" />
-                  <p>028 6278 8887 (VPĐD)</p>
+                  <p>{t('footer.phone_rep')}</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-6 h-6 text-green-600 flex-shrink-0" />
-                  <a href="mailto:sales@Dofarming.com" className="hover:text-green-700">
-                    sales@Dofarming.com
+                  <a href="mailto:Hung.do@dofarminginvestment.com" className="hover:text-green-700 break-all">
+                    Hung.do@dofarminginvestment.com
                   </a>
                 </div>
               </div>
@@ -324,19 +307,17 @@ const Footer = () => {
 
             {/* Giờ làm việc */}
             <div>
-              <h3 className="text-xl font-semibold mb-6">Giờ Làm Việc</h3>
+              <h3 className="text-xl font-semibold mb-6">{t('footer.working_hours_title')}</h3>
               <div className="space-y-3 text-gray-700">
-                <p className="italic">
-                  Giờ làm việc bộ phận văn phòng, hành chính & kinh doanh:
-                </p>
-                <p>Thứ 2 – Thứ 6: 8:00 - 17:00</p>
-                <p>Nghỉ thứ 7, chủ nhật và các ngày lễ</p>
-                <p>VP HCM: 028 6278 8887</p>
+                <p className="italic">{t('footer.working_hours_desc')}</p>
+                <p>{t('footer.working_hours_days')}</p>
+                <p>{t('footer.working_hours_weekend')}</p>
+                <p>{t('footer.phone_hcm')}</p>
                 <Link
                   href="#"
                   className="inline-flex items-center space-x-2 bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors mt-4"
                 >
-                  <span>PROFILE</span>
+                  <span>{t('footer.profile_button')}</span>
                   <ArrowUpRightSquare className="w-5 h-5"/>
                 </Link>
               </div>
@@ -344,22 +325,22 @@ const Footer = () => {
 
             {/* Tin tức */}
             <div>
-              <h3 className="text-xl font-semibold mb-6">Tin Tức Dofarming</h3>
+              <h3 className="text-xl font-semibold mb-6">{t('footer.news_title')}</h3>
               <div className="space-y-4">
-                {news.map((item) => (
+                {Array.isArray(news) && news.map((item: any) => (
                   <Link
                     key={item.title}
                     href={item.link}
                     className="block group"
                   >
-                    <div className="flex items-center align-middle  space-x-2">
+                    <div className="flex items-center align-middle space-x-2">
                       <span className="separate"></span>
                       <div>
                         <p className="group-hover:text-green-600 transition-colors line-clamp-2 leading-tight">
                           {item.title}
                         </p>
                         <time className="text-sm text-gray-500">
-                           {new Date(item.date).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })}
+                           {new Date(item.date).toLocaleDateString(language, { day: '2-digit', month: '2-digit', year: 'numeric' })}
                         </time>
                       </div>
                     </div>
@@ -370,28 +351,28 @@ const Footer = () => {
               {/* Social Links */}
               <div className="flex space-x-3 mt-6">
                 <a href="#" className="bg-green-600 text-white p-2 rounded-full hover:bg-green-700 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                  <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
                 </a>
                 <a href="#" className="bg-green-600 text-white p-2 rounded-full hover:bg-green-700 transition-colors">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                   <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                 </a>
                 <a href="#" className="bg-green-600 text-white p-2 rounded-full hover:bg-green-700 transition-colors">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-9 14.999h-2.5c0-4.418 0-9.999 0-9.999h2.5v9.999zm-1.25-11.249c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm9.25 11.249h-2.5v-4.66c0-1.293-.42-1.78-1.02-1.78s-1.18.52-1.18 1.78v4.66h-2.5c0-4.418 0-9.999 0-9.999h2.5v1.27c.563-.911 1.438-1.54 2.37-1.54 1.72 0 2.83 1.25 2.83 3.51v6.759z"/></svg>
+                   <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-9 14.999h-2.5c0-4.418 0-9.999 0-9.999h2.5v9.999zm-1.25-11.249c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm9.25 11.249h-2.5v-4.66c0-1.293-.42-1.78-1.02-1.78s-1.18.52-1.18 1.78v4.66h-2.5c0-4.418 0-9.999 0-9.999h2.5v1.27c.563-.911 1.438-1.54 2.37-1.54 1.72 0 2.83 1.25 2.83 3.51v6.759z"/></svg>
                 </a>
               </div>
             </div>
 
             {/* Form hỗ trợ */}
             <div>
-              <h3 className="text-xl font-semibold mb-6">Hỗ Trợ Tư Vấn</h3>
+              <h3 className="text-xl font-semibold mb-6">{t('footer.support_title')}</h3>
               <p className="mb-4 text-gray-700">
-                Quý khách vui lòng để lại số điện thoại để được hỗ trợ trong thời gian nhanh nhất.
+                {t('footer.support_desc')}
               </p>
               <form className="space-y-4">
-                <input type="text" placeholder="Họ tên" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"/>
-                <input type="tel" placeholder="Số điện thoại" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"/>
+                <input type="text" placeholder={t('footer.form_name_placeholder')} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"/>
+                <input type="tel" placeholder={t('footer.form_phone_placeholder')} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"/>
                 <button type="submit" className="w-full bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-colors font-semibold">
-                  Gửi Tin Nhắn
+                  {t('footer.form_submit_button')}
                 </button>
               </form>
             </div>
@@ -399,17 +380,22 @@ const Footer = () => {
         </div>
       </div>
      <div className="bg-[#5c5c5c] text-[#ffffff80] absolute-footer medium-text-center text-center py-4">
-    
-    <div className="flex items-center justify-center gap-2 mb-4">
-         <PaymentIcon><Image width={40} height={20} alt="ATM" src="atm.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
-        <PaymentIcon><Image width={40} height={20} alt="Bank Transfer" src="bank-transfer.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
-        <PaymentIcon><Image width={40} height={20} alt="JCB" src="jcb.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
-        <PaymentIcon><Image width={40} height={20} alt="MasterCard" src="mastercard.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
-        <PaymentIcon><Image width={40} height={20} alt="Visa" src="visa.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
-    </div>
+<div className="flex items-center justify-center gap-2 mb-4">
+
+<PaymentIcon><Image width={40} height={20} alt="ATM" src="atm.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+
+<PaymentIcon><Image width={40} height={20} alt="Bank Transfer" src="bank-transfer.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+
+<PaymentIcon><Image width={40} height={20} alt="JCB" src="jcb.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+
+<PaymentIcon><Image width={40} height={20} alt="MasterCard" src="mastercard.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+
+<PaymentIcon><Image width={40} height={20} alt="Visa" src="visa.svg" className="h-6 filter brightness-0 invert"/></PaymentIcon>
+
+</div>
 
     <div className="mb-4 md:mb-0">
-        <p>Copyright 2025 © CÔNG TY CỔ PHẦN TẬP ĐOÀN XUẤT - NHẬP KHẨU TRÁI CÂY DOFARMING</p>
+        <p>{t('footer.copyright')}</p>
     </div>
     
 </div>

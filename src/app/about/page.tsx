@@ -99,30 +99,24 @@ export default function About() {
           {/* Introduction and Export Market Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             {/* Introduction */}
-            <div>
-              <div className="flex items-center mb-6">
-                <span className="text-3xl font-bold text-green-600 mr-4">01</span>
-                <h2 className="text-2xl font-bold text-gray-800">Giới thiệu</h2>
-              </div>
-              <p className="text-gray-600 italic leading-relaxed mb-4">
-                Nhiều năm qua, Công ty Dofarming đã cung cấp rất nhiều các sản phẩm trái cây
-                tươi & trái cây đông lạnh cho nhiều thị trường uy tín trên thế giới.
-              </p>
-             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-700 leading-relaxed">
-                  <p>
-                    Công ty Cổ phần Tập đoàn Xuất – Nhập Khẩu Trái Cây Dofarming tiền thân là Công
-                    ty TNHH Dofarming (tại tỉnh Bến Tre) là doanh nghiệp hoạt động trong lĩnh vực xuất
-                    khẩu trái cây tươi, trái cây đông lạnh đã có hơn 25 năm kinh nghiệm. Với các nhà máy
-                    tại các tỉnh Bến Tre, Khánh Hòa và Đắk Lắk Tập đoàn Dofarming có khả năng cung cấp hơn 
-                  </p>
-                   <p>
-                     200.000 tấn trái cây các loại trong năm xuất sang thị trường Mỹ, Nhật, Úc, Châu Âu, Trung Quốc, Hàn Quốc.
-                     Nhà đóng gói đã được chứng nhận ATTP theo tiêu chuẩn FSSC 22000 và “mã nhà đóng gói” do
-                     Chính phủ Việt Nam cấp đủ điều kiện xuất khẩu trái cây tươi sang thị trường Mỹ, Trung Quốc,
-                     Australia và New Zealand…
-                  </p>
-              </div>
-            </div>
+     <div>
+  <div className="flex items-center mb-6">
+    <span className="text-3xl font-bold text-green-600 mr-4">01</span>
+    <h2 className="text-2xl font-bold text-gray-800">Giới thiệu</h2>
+  </div>
+  <p className="text-gray-600 italic leading-relaxed mb-4">
+    Dofarming – Trang trại trái cây chất lượng cao tại Úc, chuyên cung cấp trái cây tươi và đông lạnh cho các thị trường khó tính trên toàn cầu.
+  </p>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-700 leading-relaxed">
+    <p>
+      Với hệ thống trang trại trải dài tại các khu vực trọng điểm của Queensland như: 182 Homestead Rd, 75 & 103 Trembath Rd, 301 Mountainview Rd, và 567 Bilyana Rd – chúng tôi duy trì sản lượng ổn định quanh năm, phục vụ các thị trường như Mỹ, Nhật Bản, Hàn Quốc, Châu Âu và Trung Quốc.
+    </p>
+    <p>
+      Trang trại được chứng nhận FSSC 22000, sở hữu mã số vùng trồng và mã nhà đóng gói – đảm bảo đủ điều kiện xuất khẩu trái cây tươi sang các thị trường cao cấp như Mỹ, Australia, Trung Quốc và New Zealand.
+    </p>
+  </div>
+</div>
+
 
             {/* Export Market */}
             <div>

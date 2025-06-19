@@ -1,0 +1,240 @@
+{
+  "navigation": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "products": "Sản phẩm",
+    "contact": "Liên hệ",
+    "about_dropdown": {
+      "introduction": "Giới thiệu",
+      "certificates": "Chứng nhận tiêu chuẩn",
+      "history": "Lịch sử & định hướng phát triển"
+    }
+  },
+  "header": {
+    "search_placeholder": "Tìm kiếm...",
+    "language_menu_title": "Ngôn ngữ"
+  },
+  
+  "home_page": {
+     "hero_section": {
+      "title_part1": "Xây dựng niềm tin để ",
+      "title_highlight": "trái cây Việt",
+      "title_part2": " vươn xa",
+      "description": "Dofarming với phương châm Mỗi sản phẩm là một niềm tin, bằng cái tâm của người làm nghề lâu năm lĩnh vực kinh doanh trái cây, chúng tôi luôn mong muốn xây dựng dây chuyền sản xuất quy mô, khoa học, đảm bảo chất lượng an toàn vệ sinh thực phẩm.",
+      "products_button": "Sản phẩm",
+      "about_button": "Giới thiệu",
+      "slides": [
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-sau-rieng-1.png",
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-mit.png",
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-buoi.png",
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-xoai.png"
+      ]
+    },
+    "about_section": {
+      "subtitle": "Giá Trị & Sứ Mệnh",
+      "title": "DoFarming – Trang Trại Trái Cây Chất Lượng Cao Tại ÚC",
+      "mission_statement": "Chúng tôi đặt tiêu chí chất lượng sản phẩm và niềm tin của khách hàng lên hàng đầu cùng tuyên ngôn “Together We Make Vietnamese Fruit Brand” vững về chất lượng, mạnh về số lượng, xây dựng thương hiệu uy tín, hội nhập thị trường. Dofarming đã và đang từng bước đưa thương hiệu trái cây Việt Nam vươn xa trên thị trường thế giới.",
+      "ceo_title": "CEO Dofarming",
+      "feature1_title": "Tươi sạch & đảm bảo",
+      "feature1_desc": "100% nông sản tươi sạch chất lượng đồng đều với chi phí hợp lý",
+      "feature2_title": "Quy trình nghiêm ngặt",
+      "feature2_desc": "Quy trình canh tác và thu hoạch an toàn, chất lượng vệ sinh thực phẩm",
+      "why_choose_us_title": "Vì sao Dofarming là lựa chọn của bạn?",
+      "why_choose_us_features": [
+         {
+        "icon": "https://chanhthu.com/wp-content/uploads/2024/03/farm-tractor.svg",
+        "text": "'Quy trình canh tác khoa học và chuyên nghiệp'"
+    },
+    {
+        "icon": "https://chanhthu.com/wp-content/uploads/2024/03/apple-fruit-healthy-juice-vegan-vegetarian.svg",
+        "text": "'100% tươi sạch đạt an toàn vệ sinh thực phẩm'"
+    },
+    {
+        "icon": "https://chanhthu.com/wp-content/uploads/2024/03/quality.svg",
+        "text": "'Đạt tiêu chuẩn HACCP, FSSC 22000 và Halal'"
+    },
+    {
+        "icon": "https://chanhthu.com/wp-content/uploads/2024/03/chemical.svg",
+        "text": "'Kiểm soát đối với thực phẩm biến đổi gen'"
+    },
+    {
+        "icon": "https://chanhthu.com/wp-content/uploads/2024/03/clean.svg",
+        "text": "'Kiểm soát chất gây ô nhiễm trong thực phẩm'"
+    }
+      ]
+    },
+    "products_section": {
+      "subtitle": "Giới Thiệu Sản Phẩm",
+      "title": "Các Mặt Hàng Trái Cây Xuất Khẩu",
+      "view_more_button": "Xem sản phẩm khác"
+    },
+    "product_list": [
+     {
+        "name": "Sầu Riêng",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-sau-rieng-4-534x534.png",
+        "link": "/sau-rieng",
+        "rating": 5
+      },
+      {
+        "name": "Xoài",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-xoai-4-534x534.png",
+        "link": "/xoai",
+        "rating": 0
+      },
+      {
+        "name": "Bưởi da xanh",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/buoi-da-xanh-1-534x534.jpg",
+        "link": "/buoi-da-xanh",
+        "rating": 0
+      },
+      {
+        "name": "Nhãn",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/nhan-2-534x534.jpg",
+        "link": "/nhan",
+        "rating": 0
+      }
+    ],
+    "stats_section": {
+      "packing_factory": "Nhà máy đóng gói",
+      "annual_output": "Sản lượng tấn/năm",
+      "years_experience": "Năm kinh nghiệm",
+      "importing_countries": "Quốc gia nhập khẩu"
+    }
+  },
+
+  "products_page": {
+    "title": "Sản Phẩm",
+    "breadcrumb": "Sản Phẩm",
+    "items": {
+      "durian": "Sầu Riêng",
+      "mango": "Xoài",
+      "pomelo": "Bưởi da xanh",
+      "longan": "Nhãn"
+    }
+  },
+  "about_page": {
+    "title": "Giới thiệu",
+    "breadcrumb": "Giới thiệu",
+    "intro_title": "Giới thiệu",
+    "intro_quote": "Dofarming – Trang trại trái cây chất lượng cao tại Úc, chuyên cung cấp trái cây tươi và đông lạnh cho các thị trường khó tính trên toàn cầu.",
+    "section1_p1": "Với hệ thống trang trại trải dài tại các khu vực trọng điểm của Queensland như: 182 Homestead Rd, 75 & 103 Trembath Rd, 301 Mountainview Rd, và 567 Bilyana Rd – chúng tôi duy trì sản lượng ổn định quanh năm, phục vụ các thị trường như Mỹ, Nhật Bản, Hàn Quốc, Châu Âu và Trung Quốc.",
+    "section1_p2": "Trang trại được chứng nhận FSSC 22000, sở hữu mã số vùng trồng và mã nhà đóng gói – đảm bảo đủ điều kiện xuất khẩu trái cây tươi sang các thị trường cao cấp như Mỹ, Australia, Trung Quốc và New Zealand.",
+    "export_market_title": "Thị trường xuất khẩu",
+    "stats": {
+      "factory": "Nhà máy",
+      "output": "Sản lượng tấn/năm",
+      "experience": "Năm kinh nghiệm",
+      "countries": "Quốc gia nhập khẩu"
+    },
+    "cta_button": "Chứng nhận tiêu chuẩn"
+  },
+  "contact_page": {
+    "title": "Liên Hệ",
+    "breadcrumb": "Liên Hệ",
+    "address_title": "Địa chỉ",
+    "rep_address_title": "Địa chỉ đại diện",
+    "hotline_title": "Đường dây nóng",
+    "rep_office": "Văn phòng đại diện",
+    "dofarming_office": "Văn phòng Dofarming",
+    "email_title": "Email",
+    "sale_email": "Kinh doanh",
+    "service_email": "Chăm sóc khách hàng",
+    "website": "Trang web",
+    "form_title": "Liên hệ & Hỗ trợ",
+    "form_subtitle": "Quý khách vui lòng để lại tin nhắn, Dofarming sẽ liên lạc trong thời gian sớm nhất.",
+    "form_name_placeholder": "Tên bạn",
+    "form_email_placeholder": "Email",
+    "form_phone_placeholder": "Số điện thoại",
+    "form_subject_placeholder": "Tiêu đề",
+    "form_message_placeholder": "Nhập nội dung",
+    "form_submit_button": "Gửi Tin Nhắn"
+  },
+  "certificates_page": {
+    "title": "Chứng nhận tiêu chuẩn",
+    "breadcrumb_about": "Giới thiệu",
+    "breadcrumb_certificates": "Chứng nhận tiêu chuẩn",
+    "section_title": "Tiêu chuẩn xuất khẩu",
+    "safety_promise_title": "Lời hứa an toàn",
+    "safety_promise_desc": "Với phương châm \"Mỗi sản phẩm là một niềm tin\", chúng tôi cam kết mạnh mẽ về an toàn và vệ sinh thực phẩm ở mọi khâu: từ trồng trọt đến chế biến đóng gói và vận chuyển. Sản phẩm của chúng tôi có cam kết đẳng cấp, an toàn, tươi ngon phù hợp với từng khách hàng và người tiêu dùng. Các nhà máy của Dofarming đều áp dụng hệ thống quản lý chất lượng và đảm bảo vệ sinh an toàn thực phẩm, đạt tiêu chuẩn quốc tế và các chứng nhận như FSSC 22000, Halal, HACCP.",
+    "haccp_desc": "Tại Dofarming, chúng tôi kiểm soát quy trình sản xuất một cách nghiêm ngặt từ khâu ban đầu, phân tích mối nguy để đảm bảo an toàn thực phẩm. Những sản phẩm đạt tiêu chuẩn HACCP về hệ thống quản lý chất lượng do ủy ban CODEX (tổ chức do FAO và WHO thành lập) phát triển sẽ bảo đảm được mức độ an toàn vệ sinh thực phẩm, tạo niềm tin về chất lượng sản phẩm trái cây Dofarming - Made in Vietnam cho đối tác và khách hàng.",
+    "fssc_desc": "Sản phẩm được đóng gói theo tiêu chuẩn FSSC 22000 để xuất khẩu đi những thị trường khó tính như Mỹ, Úc, New Zealand. Không những chú trọng vào quá trình canh tác, Dofarming Group luôn chú trọng vào quá trình hệ thống chế biến và bảo quản sản phẩm. Chúng tôi đảm bảo an toàn thực phẩm thông qua việc xác định, đánh giá và kiểm soát các rủi ro, mối nguy trong suốt quá trình chế biến, sản xuất, đóng gói, bảo quản, vận chuyển và phân phối sản phẩm đến tay khách hàng.",
+    "halal_desc": "Chứng nhận Halal - chứng nhận cho các sản phẩm được phép sử dụng bởi người Hồi giáo. Trong quá trình sản xuất, chế biến, sản phẩm không bao gồm các thành phần hoặc quy trình có chứa động vật hoặc phụ phẩm động vật. Tại nhà máy của chúng tôi, tất cả các sản phẩm trái cây đều đáp ứng yêu cầu về nguyên liệu đầu vào, tiêu chuẩn sản xuất và các yêu cầu của tiêu chuẩn Halal.",
+    "cta_button": "Lịch sử & định hướng phát triển"
+  },
+  "history_page": {
+    "title": "Lịch sử & định hướng phát triển",
+    "breadcrumb_about": "Giới thiệu",
+    "breadcrumb_history": "Lịch sử & định hướng phát triển",
+    "history_section_title": "Lịch sử",
+    "timeline": {
+      "y2022_title": "Mở rộng nhà máy đóng gói",
+      "y2022_desc": "Công ty tiếp tục đầu tư mở rộng nhà máy tại các tỉnh Đak Lak, Tiền Giang, Đồng Nai với dây chuyền tiện biến và dây chuyền đóng gói sản xuất lên 300.000 tấn/năm với hệ thống máy móc, thiết bị hiện đại.",
+      "y2021_title": "Dofarming Fruit JSC",
+      "y2021_desc": "Mở hình chuyển đổi từ Công ty TNHH MTV sang Công ty Cổ Phần Trái Cây (Công ty Cổ Phần Trái Cây Dofarming) với mục tiêu mở rộng thêm nhiều nhà máy đáp ứng chuẩn xuất khẩu.",
+      "y2020_title": "Chứng nhận HALAL",
+      "y2020_desc": "Dofarming đã xuất khẩu lô vải thiều đầu tiên sang Nhật Bản. Nhà máy đạt chứng nhận Halal.",
+      "y2019_title": "Chứng nhận FSSC 22000",
+      "y2019_desc": "Dofarming đạt được lô xuất đầu tiên sang Mỹ. Nhà máy đạt chứng chỉ FSSC 22000.",
+      "y2012_title": "USA Code",
+      "y2012_desc": "Bộ Nông nghiệp Hoa Kỳ thẩm định và cấp mã số cho nhà đóng gói trái cây đảm bảo đủ điều kiện xuất khẩu vào thị trường Hoa Kỳ. Dofarming là công ty Việt Nam đầu tiên xuất khẩu thanh long chính thống sang thị trường Mỹ với số lượng lên đến 200 tấn.",
+      "y2009_title": "Dofarming Co.,Ltd",
+      "y2009_desc": "Mô hình được chuyển đổi từ doanh nghiệp tư nhân thành công ty TNHH (Công ty TNHH Xuất nhập khẩu Trái cây Dofarming) với mục tiêu xây dựng nhà đóng gói, vườn cây ăn trái đạt tiêu chuẩn Việt Nam và Quốc tế mở rộng các thị trường khó tính hơn như, Pháp, Úc Canada và Hàn Quốc Trung Đông.",
+      "y1997_title": "Doanh nghiệp tư nhân Dofarming",
+      "y1997_desc": "Khởi nghiệp từ một người thu mua nhỏ, thu mua trái cây của nông dân trong vùng để bán cho các thương lái lớn hoặc các công ty khác. Năm 1997, DNTN Dofarming được thành lập, chuyên xuất khẩu trái cây sang Trung Quốc với số lượng xuất khẩu đạt 2000 tấn/năm."
+    },
+    "orientation_section_title": "Định hướng kinh doanh",
+    "vision_title": "Tầm nhìn",
+    "vision_desc_1": "Năm 2025: Trở thành doanh nghiệp hàng đầu với vốn đầu tư 500 tỷ đồng cho việc chế biến và đóng gói trái cây tươi Việt Nam, với tầm nhìn trở thành một nhà phân phối trái cây tại Đông Đak Lak với hơn 10 hecta nhằm phát triển và xây dựng các thủ phủ trái cây của tỉnh Đồng Nai như bưởi, chanh, sầu riêng, chuối... Công suất nhà máy sau khi đi vào hoạt động là từ 70.000 tấn mỗi năm.",
+    "vision_desc_2": "Mục tiêu đến năm 2025: Tập đoàn Dofarming trở thành doanh nghiệp có thể cung ứng hơn 500.000 tấn sản phẩm trái cây các loại mỗi năm, cung cấp đủ số lượng và chất lượng cho các thị trường siêu thị lớn bằng chuỗi thương hiệu trái cây \"Dofarming – Made in Vietnam\".",
+    "mission_title": "Sứ mệnh",
+    "mission_fields": {
+      "customers_title": "Khách hàng",
+      "customers_desc": "Cung cấp các sản phẩm và dịch vụ với chất lượng tốt nhất.",
+      "employees_title": "Nhân viên",
+      "employees_desc": "Phát triển bền vững và hiệu quả nhằm gia tăng giá trị lao động cho nhân viên.",
+      "farmers_title": "Nông dân",
+      "farmers_desc": "Liên kết chặt chẽ và hỗ trợ kỹ thuật tiên tiến để phát triển vùng trồng an toàn và nâng cao giá trị sản phẩm và năng suất của nông dân.",
+      "society_title": "Xã hội",
+      "society_desc": "Hoạt động sản xuất kinh doanh hài hòa với lợi ích chung của xã hội, góp phần bảo vệ môi trường và xúc tiến cộng đồng."
+    },
+    "core_values_title": "Giá trị cốt lõi",
+    "credibility_title": "Sự tin cậy",
+    "unity_title": "Sự đoàn kết",
+    "unity_desc": "Mọi thành viên trong công ty phải cùng hướng tới mục tiêu chung của tổ chức. Kết hợp điểm mạnh của mỗi cá nhân, huy động tối đa năng lực để đạt được mục tiêu hiệu quả nhất.",
+    "integrity_title": "Sự liêm chính",
+    "integrity_desc": "Mọi thành viên trong công ty phải làm việc liêm chính, đây là kim chỉ nam trong giao tiếp và làm việc hàng ngày. Đây là yếu tố tạo dựng niềm tin và sự tôn trọng giữa các thành viên.",
+    "cta_button": "Thành viên ban quản trị"
+  },
+   
+  "footer": {
+    "contact": "Liên hệ",
+    "address": "567 Bilyana road - Murray upper - QLD - 4854.",
+    "tax_code": "MST: 0316940426",
+    "phone_rep": "028 6278 8887 (VPĐD)",
+    "working_hours_title": "Giờ Làm Việc",
+    "working_hours_desc": "Giờ làm việc bộ phận văn phòng, hành chính & kinh doanh:",
+    "working_hours_days": "Thứ 2 – Thứ 6: 8:00 - 17:00",
+    "working_hours_weekend": "Nghỉ thứ 7, chủ nhật và các ngày lễ",
+    "phone_hcm": "VP HCM: 028 6278 8887",
+    "profile_button": "PROFILE",
+    "news_title": "Tin Tức Dofarming",
+    "support_title": "Hỗ Trợ Tư Vấn",
+    "support_desc": "Quý khách vui lòng để lại số điện thoại để được hỗ trợ trong thời gian nhanh nhất.",
+    "form_name_placeholder": "Họ tên",
+    "form_phone_placeholder": "Số điện thoại",
+    "form_submit_button": "Gửi Tin Nhắn",
+    "copyright": "Copyright 2025 © DOFARMING – TRANG TRẠI TRÁI CÂY CHẤT LƯỢNG CAO TẠI ÚC",
+    "news_list": [
+      {
+        "title": "[Tin mới] Tuyển dụng Chuyên viên Thu mua",
+        "date": "2024-11-26",
+        "link": "/news/tuyen-dung-chuyen-vien-thu-mua"
+      },
+      {
+        "title": "Thủ tướng Phạm Minh Chính cùng Thủ tướng Úc thăm trang trại Dofarming",
+        "date": "2024-10-14",
+        "link": "/news/thu-tuong-tham-chanh-thu"
+      }
+    ]
+  }
+}

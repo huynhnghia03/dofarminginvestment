@@ -1,0 +1,241 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact",
+    "about_dropdown": {
+      "introduction": "Introduction",
+      "certificates": "Standard Certificates",
+      "history": "History & Development Orientation"
+    }
+  },
+  "header": {
+    "search_placeholder": "Search...",
+    "language_menu_title": "Language"
+  },
+  
+  "home_page": {
+    "hero_section": {
+      "title_part1": "Building trust to bring ",
+      "title_highlight": "Vietnamese fruits",
+      "title_part2": " to the world",
+      "description": "With the motto 'Every product is a belief', Dofarming, with the dedication of long-time professionals in the fruit business, always desires to build a large-scale, scientific production line, ensuring food safety and quality.",
+      "products_button": "Products",
+      "about_button": "About Us",
+      "slides": [
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-sau-rieng-1.png",
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-mit.png",
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-buoi.png",
+        "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-xoai.png"
+      ]
+    },
+    "about_section": {
+      "subtitle": "Values & Mission",
+      "title": "DoFarming – High-Quality Fruit Farm in Australia",
+      "mission_statement": "We prioritize product quality and customer trust with the motto “Together We Make Vietnamese Fruit Brand” - strong in quality, abundant in quantity, building a reputable brand, and integrating into the market. Dofarming is gradually bringing the Vietnamese fruit brand to the world market.",
+      "ceo_title": "CEO Dofarming",
+      "feature1_title": "Fresh & Guaranteed",
+      "feature1_desc": "100% fresh, clean agricultural products of uniform quality at a reasonable cost",
+      "feature2_title": "Strict Process",
+      "feature2_desc": "Safe farming and harvesting processes, ensuring food hygiene and quality",
+      "why_choose_us_title": "Why is Dofarming your choice?",
+      "why_choose_us_features": [
+        {
+          "icon": "https://chanhthu.com/wp-content/uploads/2024/03/farm-tractor.svg",
+          "text": "Scientific and professional farming process"
+        },
+        {
+          "icon": "https://chanhthu.com/wp-content/uploads/2024/03/apple-fruit-healthy-juice-vegan-vegetarian.svg",
+          "text": "100% fresh and clean, meeting food safety standards"
+        },
+        {
+          "icon": "https://chanhthu.com/wp-content/uploads/2024/03/quality.svg",
+          "text": "Achieved HACCP, FSSC 22000, and Halal standards"
+        },
+        {
+          "icon": "https://chanhthu.com/wp-content/uploads/2024/03/chemical.svg",
+          "text": "Control over genetically modified foods"
+        },
+        {
+          "icon": "https://chanhthu.com/wp-content/uploads/2024/03/clean.svg",
+          "text": "Control of contaminants in food"
+        }
+      ]
+    },
+    "products_section": {
+      "subtitle": "Product Introduction",
+      "title": "Exported Fruit Items",
+      "view_more_button": "View more products"
+    },
+    "product_list": [
+      {
+        "name": "Durian",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-sau-rieng-4-534x534.png",
+        "link": "/durian",
+        "rating": 5
+      },
+      {
+        "name": "Mango",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-xoai-4-534x534.png",
+        "link": "/mango",
+        "rating": 0
+      },
+      {
+        "name": "Green Pomelo",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/buoi-da-xanh-1-534x534.jpg",
+        "link": "/green-pomelo",
+        "rating": 0
+      },
+      {
+        "name": "Longan",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/nhan-2-534x534.jpg",
+        "link": "/longan",
+        "rating": 0
+      }
+    ],
+    "stats_section": {
+      "packing_factory": "Packing Factory",
+      "annual_output": "Tons/Year Output",
+      "years_experience": "Years of Experience",
+      "importing_countries": "Importing Countries"
+    }
+  }
+
+,
+  "products_page": {
+    "title": "Products",
+    "breadcrumb": "Products",
+    "items": {
+      "durian": "Durian",
+      "mango": "Mango",
+      "pomelo": "Green Pomelo",
+      "longan": "Longan"
+    }
+  },
+  "about_page": {
+    "title": "About Us",
+    "breadcrumb": "About Us",
+    "intro_title": "Introduction",
+    "intro_quote": "Dofarming – A high-quality fruit farm in Australia, specializing in supplying fresh and frozen fruit to demanding markets worldwide.",
+    "section1_p1": "With a system of farms stretching across key areas of Queensland such as: 182 Homestead Rd, 75 & 103 Trembath Rd, 301 Mountainview Rd, and 567 Bilyana Rd – we maintain stable year-round production, serving markets like the USA, Japan, South Korea, Europe, and China.",
+    "section1_p2": "The farm is FSSC 22000 certified, possessing a growing area code and packing house code – ensuring it meets the conditions for exporting fresh fruit to premium markets such as the USA, Australia, China, and New Zealand.",
+    "export_market_title": "Export Market",
+    "stats": {
+      "factory": "Factory",
+      "output": "Tons/Year Output",
+      "experience": "Years of Experience",
+      "countries": "Importing Countries"
+    },
+    "cta_button": "Standard Certificates"
+  },
+  "contact_page": {
+    "title": "Contact Us",
+    "breadcrumb": "Contact",
+    "address_title": "Address",
+    "rep_address_title": "Representative Address",
+    "hotline_title": "Hotline",
+    "rep_office": "Representative Office",
+    "dofarming_office": "Dofarming Office",
+    "email_title": "Email",
+    "sale_email": "Sale",
+    "service_email": "Customer Service",
+    "website": "Website",
+    "form_title": "Contact & Support",
+    "form_subtitle": "Please leave a message, Dofarming will contact you as soon as possible.",
+    "form_name_placeholder": "Your Name",
+    "form_email_placeholder": "Email",
+    "form_phone_placeholder": "Phone Number",
+    "form_subject_placeholder": "Subject",
+    "form_message_placeholder": "Enter your message",
+    "form_submit_button": "Send Message"
+  },
+  "certificates_page": {
+    "title": "Standard Certificates",
+    "breadcrumb_about": "About Us",
+    "breadcrumb_certificates": "Standard Certificates",
+    "section_title": "Export Standards",
+    "safety_promise_title": "Safety Promise",
+    "safety_promise_desc": "With the motto \"Every product is a belief,\" we are strongly committed to food safety and hygiene at every stage: from cultivation to processing, packaging, and transportation. Our products are committed to being high-class, safe, fresh, and delicious, suitable for every customer and consumer. Dofarming's factories all apply quality management and food safety assurance systems, meeting international standards and certifications such as FSSC 22000, Halal, HACCP.",
+    "haccp_desc": "At Dofarming, we strictly control the production process from the initial stage, analyzing hazards to ensure food safety. Products that meet the HACCP standard for quality management systems, developed by the CODEX commission (an organization established by FAO and WHO), ensure a high level of food safety, building trust in the quality of Dofarming's fruit products - Made in Vietnam for partners and customers.",
+    "fssc_desc": "Products are packaged according to the FSSC 22000 standard for export to demanding markets such as the USA, Australia, and New Zealand. Not only focusing on the cultivation process, Dofarming Group also emphasizes the processing and preservation system. We ensure food safety by identifying, evaluating, and controlling risks and hazards throughout the processing, production, packaging, storage, transportation, and distribution of products to customers.",
+    "halal_desc": "Halal certification - certification for products permissible for use by Muslims. During production and processing, the product must not include any components or processes containing animals or animal by-products. At our factory, all fruit products meet the requirements for raw materials, production standards, and the requirements of the Halal standard.",
+    "cta_button": "History & Development Orientation"
+  },
+  "history_page": {
+    "title": "History & Development Orientation",
+    "breadcrumb_about": "About Us",
+    "breadcrumb_history": "History & Development Orientation",
+    "history_section_title": "History",
+    "timeline": {
+      "y2022_title": "Packing Factory Expansion",
+      "y2022_desc": "The company continues to invest in expanding factories in Dak Lak, Tien Giang, and Dong Nai provinces with processing and packaging lines producing up to 300,000 tons/year with modern machinery and equipment.",
+      "y2021_title": "Dofarming Fruit JSC",
+      "y2021_desc": "Transitioned from a One-Member LLC to a Joint Stock Fruit Company (Dofarming Fruit JSC) with the goal of expanding more factories to meet export standards.",
+      "y2020_title": "HALAL Certification",
+      "y2020_desc": "Dofarming exported its first batch of lychees to Japan. The factory achieved Halal certification.",
+      "y2019_title": "FSSC 22000 Certification",
+      "y2019_desc": "Dofarming achieved its first export shipment to the USA. The factory achieved FSSC 22000 certification.",
+      "y2012_title": "USA Code",
+      "y2012_desc": "The United States Department of Agriculture inspected and issued a code for the fruit packing house, ensuring it met the conditions for export to the US market. Dofarming was the first Vietnamese company to officially export dragon fruit to the US market with a quantity of up to 200 tons.",
+      "y2009_title": "Dofarming Co.,Ltd",
+      "y2009_desc": "The model was converted from a private enterprise to a limited liability company (Dofarming Fruit Import-Export Co., Ltd) to build packing houses and orchards meeting national and international standards, expanding into more demanding markets like France, Australia, Canada, and the Middle East.",
+      "y1997_title": "Dofarming Private Enterprise",
+      "y1997_desc": "Started as a small buyer, purchasing fruit from local farmers to sell to larger traders. In 1997, Dofarming Private Enterprise was established, specializing in exporting fruit to China with an annual export volume of 2000 tons."
+    },
+    "orientation_section_title": "Business Orientation",
+    "vision_title": "Vision",
+    "vision_desc_1": "By 2025: To become a leading enterprise with an investment of 500 billion VND for processing and packaging fresh Vietnamese fruits, with a vision to become a fruit distributor in East Dak Lak with over 10 hectares. To develop fruit hubs in Dong Nai province for pomelo, lemon, durian, bananas, etc. The factory's capacity after commissioning will be from 70,000 tons per year.",
+    "vision_desc_2": "Goal by 2025: Dofarming Group will become an enterprise capable of supplying over 500,000 tons of various fruit products annually, providing sufficient quantity and quality for large supermarket markets through the \"Dofarming – Made in Vietnam\" fruit brand chain.",
+    "mission_title": "Mission",
+    "mission_fields": {
+      "customers_title": "Customers",
+      "customers_desc": "Provide products and services with the best quality.",
+      "employees_title": "Employees",
+      "employees_desc": "Sustainable and effective development to increase labor value for employees.",
+      "farmers_title": "Farmers",
+      "farmers_desc": "Close linkage and advanced technical support to develop safe growing areas and enhance product value and productivity for farmers.",
+      "society_title": "Society",
+      "society_desc": "Business operations are aligned with the common interests of society, contributing to environmental protection and community promotion."
+    },
+    "core_values_title": "Core Values",
+    "credibility_title": "Credibility",
+    "unity_title": "Unity",
+    "unity_desc": "All members of the company must work towards the common goal of the organization, combining the strengths of each individual and maximizing capacity to achieve the goal most effectively.",
+    "integrity_title": "Integrity",
+    "integrity_desc": "All members of the company must work with integrity, which is the guiding principle in daily communication and work. This is the factor that builds trust and respect among members.",
+    "cta_button": "Board of Management"
+  },
+  "footer": {
+    "contact": "Contact Us",
+    "address": "567 Bilyana road - Murray upper - QLD - 4854.",
+    "tax_code": "Tax Code: 0316940426",
+    "phone_rep": "028 6278 8887 (Rep. Office)",
+    "working_hours_title": "Working Hours",
+    "working_hours_desc": "Office, administration & sales department working hours:",
+    "working_hours_days": "Monday – Friday: 8:00 AM - 5:00 PM",
+    "working_hours_weekend": "Closed on Saturdays, Sundays, and holidays",
+    "phone_hcm": "HCM Office: 028 6278 8887",
+    "profile_button": "PROFILE",
+    "news_title": "Dofarming News",
+    "support_title": "Consultation Support",
+    "support_desc": "Please leave your phone number for the quickest support.",
+    "form_name_placeholder": "Full Name",
+    "form_phone_placeholder": "Phone Number",
+    "form_submit_button": "Send Message",
+    "copyright": "Copyright 2025 © DOFARMING – HIGH-QUALITY FRUIT FARM IN AUSTRALIA",
+    "news_list": [
+      {
+        "title": "[New] Recruiting for Purchasing Specialist",
+        "date": "2024-11-26",
+        "link": "/news/recruiting-purchasing-specialist"
+      },
+      {
+        "title": "Prime Minister Pham Minh Chinh and Australian Prime Minister visit Dofarming farm",
+        "date": "2024-10-14",
+        "link": "/news/pm-visit-dofarming"
+      }
+    ]
+  }
+
+}

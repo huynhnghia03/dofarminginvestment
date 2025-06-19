@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-geist",
@@ -23,11 +24,12 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body className={`${geist.variable} font-sans antialiased`}>
-
+        {/* 2. Bọc toàn bộ ứng dụng bằng LanguageProvider */}
+        <LanguageProvider>
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
-
+        </LanguageProvider>
       </body>
     </html>
   );
