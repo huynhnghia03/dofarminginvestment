@@ -1,4 +1,8 @@
 {
+   "metadata": {
+    "title": "DOFARMING – HIGH-QUALITY FRUIT FARM IN AUSTRALIA",
+    "description": "DOFARMING – HIGH-QUALITY FRUIT FARM IN AUSTRALIA"
+  },
   "navigation": {
     "home": "Home",
     "about": "About Us",
@@ -103,15 +107,35 @@
   }
 
 ,
-  "products_page": {
+ "products_page": {
     "title": "Products",
     "breadcrumb": "Products",
-    "items": {
-      "durian": "Durian",
-      "mango": "Mango",
-      "pomelo": "Green Pomelo",
-      "longan": "Longan"
-    }
+    "items": [
+      {
+        "name": "Durian",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-sau-rieng-4-534x534.png",
+        "link": "/durian",
+        "rating": 5
+      },
+      {
+        "name": "Mango",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-xoai-4-534x534.png",
+        "link": "/mango",
+        "rating": 0
+      },
+      {
+        "name": "Green Pomelo",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/buoi-da-xanh-1-534x534.jpg",
+        "link": "/green-pomelo",
+        "rating": 0
+      },
+      {
+        "name": "Longan",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/nhan-2-534x534.jpg",
+        "link": "/longan",
+        "rating": 0
+      }
+    ]
   },
   "about_page": {
     "title": "About Us",
@@ -121,19 +145,40 @@
     "section1_p1": "With a system of farms stretching across key areas of Queensland such as: 182 Homestead Rd, 75 & 103 Trembath Rd, 301 Mountainview Rd, and 567 Bilyana Rd – we maintain stable year-round production, serving markets like the USA, Japan, South Korea, Europe, and China.",
     "section1_p2": "The farm is FSSC 22000 certified, possessing a growing area code and packing house code – ensuring it meets the conditions for exporting fresh fruit to premium markets such as the USA, Australia, China, and New Zealand.",
     "export_market_title": "Export Market",
-    "stats": {
-      "factory": "Factory",
-      "output": "Tons/Year Output",
-      "experience": "Years of Experience",
-      "countries": "Importing Countries"
-    },
+    "stats": [
+      { "value": "120.000m2", "label": "Factory" },
+      { "value": "+300.000", "label": "Tons/Year Output" },
+      { "value": "+25", "label": "Years of Experience" },
+      { "value": "+20", "label": "Importing Countries" }
+    ],
     "cta_button": "Standard Certificates"
   },
-  "contact_page": {
+ "contact_page": {
     "title": "Contact Us",
     "breadcrumb": "Contact",
     "address_title": "Address",
-    "rep_address_title": "Representative Address",
+    "addresses": [
+      {
+        "title": "Representative Address",
+        "address": "567 Bilyana road - Murray upper - QLD - 4854."
+      },
+      {
+        "title": "Address 2",
+        "address": "301 Mountainview road - airville - QLD- 4807."
+      },
+      {
+        "title": "Address 3",
+        "address": "75 Trembath road - Horseshoe lagoon - QLD- 4809."
+      },
+      {
+        "title": "Address 4",
+        "address": "103 Trembath road - Horseshoe lagoon - QLD- 4809."
+      },
+      {
+        "title": "Address 5",
+        "address": "182 homestead road - Frederick field- QLD 4806."
+      }
+    ],
     "hotline_title": "Hotline",
     "rep_office": "Representative Office",
     "dofarming_office": "Dofarming Office",
@@ -149,7 +194,8 @@
     "form_subject_placeholder": "Subject",
     "form_message_placeholder": "Enter your message",
     "form_submit_button": "Send Message"
-  },
+  }
+,
   "certificates_page": {
     "title": "Standard Certificates",
     "breadcrumb_about": "About Us",
@@ -161,43 +207,33 @@
     "fssc_desc": "Products are packaged according to the FSSC 22000 standard for export to demanding markets such as the USA, Australia, and New Zealand. Not only focusing on the cultivation process, Dofarming Group also emphasizes the processing and preservation system. We ensure food safety by identifying, evaluating, and controlling risks and hazards throughout the processing, production, packaging, storage, transportation, and distribution of products to customers.",
     "halal_desc": "Halal certification - certification for products permissible for use by Muslims. During production and processing, the product must not include any components or processes containing animals or animal by-products. At our factory, all fruit products meet the requirements for raw materials, production standards, and the requirements of the Halal standard.",
     "cta_button": "History & Development Orientation"
-  },
+  }
+,
   "history_page": {
     "title": "History & Development Orientation",
     "breadcrumb_about": "About Us",
     "breadcrumb_history": "History & Development Orientation",
     "history_section_title": "History",
-    "timeline": {
-      "y2022_title": "Packing Factory Expansion",
-      "y2022_desc": "The company continues to invest in expanding factories in Dak Lak, Tien Giang, and Dong Nai provinces with processing and packaging lines producing up to 300,000 tons/year with modern machinery and equipment.",
-      "y2021_title": "Dofarming Fruit JSC",
-      "y2021_desc": "Transitioned from a One-Member LLC to a Joint Stock Fruit Company (Dofarming Fruit JSC) with the goal of expanding more factories to meet export standards.",
-      "y2020_title": "HALAL Certification",
-      "y2020_desc": "Dofarming exported its first batch of lychees to Japan. The factory achieved Halal certification.",
-      "y2019_title": "FSSC 22000 Certification",
-      "y2019_desc": "Dofarming achieved its first export shipment to the USA. The factory achieved FSSC 22000 certification.",
-      "y2012_title": "USA Code",
-      "y2012_desc": "The United States Department of Agriculture inspected and issued a code for the fruit packing house, ensuring it met the conditions for export to the US market. Dofarming was the first Vietnamese company to officially export dragon fruit to the US market with a quantity of up to 200 tons.",
-      "y2009_title": "Dofarming Co.,Ltd",
-      "y2009_desc": "The model was converted from a private enterprise to a limited liability company (Dofarming Fruit Import-Export Co., Ltd) to build packing houses and orchards meeting national and international standards, expanding into more demanding markets like France, Australia, Canada, and the Middle East.",
-      "y1997_title": "Dofarming Private Enterprise",
-      "y1997_desc": "Started as a small buyer, purchasing fruit from local farmers to sell to larger traders. In 1997, Dofarming Private Enterprise was established, specializing in exporting fruit to China with an annual export volume of 2000 tons."
-    },
+    "timeline": [
+      { "year": 2022, "title": "Packing Factory Expansion", "description": "The company continues to invest in expanding factories in Dak Lak, Tien Giang, and Dong Nai provinces with processing and packaging lines producing up to 300,000 tons/year with modern machinery and equipment.", "color": "bg-blue-500" },
+      { "year": 2021, "title": "Dofarming Fruit JSC", "description": "Transitioned from a One-Member LLC to a Joint Stock Fruit Company (Dofarming Fruit JSC) with the goal of expanding more factories to meet export standards.", "color": "bg-green-500" },
+      { "year": 2020, "title": "HALAL Certification", "description": "Dofarming exported its first batch of lychees to Japan. The factory achieved Halal certification.", "color": "bg-gray-500" },
+      { "year": 2019, "title": "FSSC 22000 Certification", "description": "Dofarming achieved its first export shipment to the USA. The factory achieved FSSC 22000 certification.", "color": "bg-green-500" },
+      { "year": 2012, "title": "USA Code", "description": "The United States Department of Agriculture inspected and issued a code for the fruit packing house, ensuring it met the conditions for export to the US market. Dofarming was the first Vietnamese company to officially export dragon fruit to the US market with a quantity of up to 200 tons.", "color": "bg-blue-500" },
+      { "year": 2009, "title": "Dofarming Co.,Ltd", "description": "The model was converted from a private enterprise to a limited liability company (Dofarming Fruit Import-Export Co., Ltd) to build packing houses and orchards meeting national and international standards, expanding into more demanding markets like France, Australia, Canada, and the Middle East.", "color": "bg-green-500" },
+      { "year": 1997, "title": "Dofarming Private Enterprise", "description": "Started as a small buyer, purchasing fruit from local farmers to sell to larger traders. In 1997, Dofarming Private Enterprise was established, specializing in exporting fruit to China with an annual export volume of 2000 tons.", "color": "bg-orange-500" }
+    ],
     "orientation_section_title": "Business Orientation",
     "vision_title": "Vision",
     "vision_desc_1": "By 2025: To become a leading enterprise with an investment of 500 billion VND for processing and packaging fresh Vietnamese fruits, with a vision to become a fruit distributor in East Dak Lak with over 10 hectares. To develop fruit hubs in Dong Nai province for pomelo, lemon, durian, bananas, etc. The factory's capacity after commissioning will be from 70,000 tons per year.",
     "vision_desc_2": "Goal by 2025: Dofarming Group will become an enterprise capable of supplying over 500,000 tons of various fruit products annually, providing sufficient quantity and quality for large supermarket markets through the \"Dofarming – Made in Vietnam\" fruit brand chain.",
     "mission_title": "Mission",
-    "mission_fields": {
-      "customers_title": "Customers",
-      "customers_desc": "Provide products and services with the best quality.",
-      "employees_title": "Employees",
-      "employees_desc": "Sustainable and effective development to increase labor value for employees.",
-      "farmers_title": "Farmers",
-      "farmers_desc": "Close linkage and advanced technical support to develop safe growing areas and enhance product value and productivity for farmers.",
-      "society_title": "Society",
-      "society_desc": "Business operations are aligned with the common interests of society, contributing to environmental protection and community promotion."
-    },
+    "mission_fields": [
+      { "icon": "🛒", "title": "Customers", "description": "Provide products and services with the best quality." },
+      { "icon": "👥", "title": "Employees", "description": "Sustainable and effective development to increase labor value for employees." },
+      { "icon": "🌱", "title": "Farmers", "description": "Close linkage and advanced technical support to develop safe growing areas and enhance product value and productivity for farmers." },
+      { "icon": "🌍", "title": "Society", "description": "Business operations are aligned with the common interests of society, contributing to environmental protection and community promotion." }
+    ],
     "core_values_title": "Core Values",
     "credibility_title": "Credibility",
     "unity_title": "Unity",

@@ -1,4 +1,8 @@
 {
+   "metadata": {
+    "title": "DOFARMING – NÔNG TRẠI TRÁI CÂY CHẤT LƯỢNG CAO TẠI ÚC",
+    "description": "DOFARMING – NÔNG TRẠI TRÁI CÂY CHẤT LƯỢNG CAO TẠI ÚC"
+  },
   "navigation": {
     "home": "Trang chủ",
     "about": "Về chúng tôi",
@@ -102,15 +106,35 @@
     }
   },
 
-  "products_page": {
+   "products_page": {
     "title": "Sản Phẩm",
     "breadcrumb": "Sản Phẩm",
-    "items": {
-      "durian": "Sầu Riêng",
-      "mango": "Xoài",
-      "pomelo": "Bưởi da xanh",
-      "longan": "Nhãn"
-    }
+    "items": [
+      {
+        "name": "Sầu Riêng",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-sau-rieng-4-534x534.png",
+        "link": "/sau-rieng",
+        "rating": 5
+      },
+      {
+        "name": "Xoài",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/chanh-thu-xoai-4-534x534.png",
+        "link": "/xoai",
+        "rating": 0
+      },
+      {
+        "name": "Bưởi da xanh",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/buoi-da-xanh-1-534x534.jpg",
+        "link": "/buoi-da-xanh",
+        "rating": 0
+      },
+      {
+        "name": "Nhãn",
+        "image": "https://chanhthu.com/wp-content/uploads/2024/03/nhan-2-534x534.jpg",
+        "link": "/nhan",
+        "rating": 0
+      }
+    ]
   },
   "about_page": {
     "title": "Giới thiệu",
@@ -120,19 +144,40 @@
     "section1_p1": "Với hệ thống trang trại trải dài tại các khu vực trọng điểm của Queensland như: 182 Homestead Rd, 75 & 103 Trembath Rd, 301 Mountainview Rd, và 567 Bilyana Rd – chúng tôi duy trì sản lượng ổn định quanh năm, phục vụ các thị trường như Mỹ, Nhật Bản, Hàn Quốc, Châu Âu và Trung Quốc.",
     "section1_p2": "Trang trại được chứng nhận FSSC 22000, sở hữu mã số vùng trồng và mã nhà đóng gói – đảm bảo đủ điều kiện xuất khẩu trái cây tươi sang các thị trường cao cấp như Mỹ, Australia, Trung Quốc và New Zealand.",
     "export_market_title": "Thị trường xuất khẩu",
-    "stats": {
-      "factory": "Nhà máy",
-      "output": "Sản lượng tấn/năm",
-      "experience": "Năm kinh nghiệm",
-      "countries": "Quốc gia nhập khẩu"
-    },
+    "stats":  [
+      { "value": "120.000m2", "label": "Nhà máy" },
+      { "value": "+300.000", "label": "Sản lượng tấn/năm" },
+      { "value": "+25", "label": "Năm kinh nghiệm" },
+      { "value": "+20", "label": "Quốc gia nhập khẩu" }
+    ],
     "cta_button": "Chứng nhận tiêu chuẩn"
   },
   "contact_page": {
     "title": "Liên Hệ",
     "breadcrumb": "Liên Hệ",
     "address_title": "Địa chỉ",
-    "rep_address_title": "Địa chỉ đại diện",
+    "addresses": [
+      {
+        "title": "Địa chỉ đại diện",
+        "address": "567 Bilyana road - Murray upper - QLD - 4854."
+      },
+      {
+        "title": "Địa chỉ 2",
+        "address": "301 Mountainview road - airville - QLD- 4807."
+      },
+      {
+        "title": "Địa chỉ 3",
+        "address": "75 Trembath road - Horseshoe lagoon - QLD- 4809."
+      },
+      {
+        "title": "Địa chỉ 4",
+        "address": "103 Trembath road - Horseshoe lagoon - QLD- 4809."
+      },
+      {
+        "title": "Địa chỉ 5",
+        "address": "182 homestead road - Frederick field- QLD 4806."
+      }
+    ],
     "hotline_title": "Đường dây nóng",
     "rep_office": "Văn phòng đại diện",
     "dofarming_office": "Văn phòng Dofarming",
@@ -161,42 +206,31 @@
     "halal_desc": "Chứng nhận Halal - chứng nhận cho các sản phẩm được phép sử dụng bởi người Hồi giáo. Trong quá trình sản xuất, chế biến, sản phẩm không bao gồm các thành phần hoặc quy trình có chứa động vật hoặc phụ phẩm động vật. Tại nhà máy của chúng tôi, tất cả các sản phẩm trái cây đều đáp ứng yêu cầu về nguyên liệu đầu vào, tiêu chuẩn sản xuất và các yêu cầu của tiêu chuẩn Halal.",
     "cta_button": "Lịch sử & định hướng phát triển"
   },
-  "history_page": {
+   "history_page": {
     "title": "Lịch sử & định hướng phát triển",
     "breadcrumb_about": "Giới thiệu",
     "breadcrumb_history": "Lịch sử & định hướng phát triển",
     "history_section_title": "Lịch sử",
-    "timeline": {
-      "y2022_title": "Mở rộng nhà máy đóng gói",
-      "y2022_desc": "Công ty tiếp tục đầu tư mở rộng nhà máy tại các tỉnh Đak Lak, Tiền Giang, Đồng Nai với dây chuyền tiện biến và dây chuyền đóng gói sản xuất lên 300.000 tấn/năm với hệ thống máy móc, thiết bị hiện đại.",
-      "y2021_title": "Dofarming Fruit JSC",
-      "y2021_desc": "Mở hình chuyển đổi từ Công ty TNHH MTV sang Công ty Cổ Phần Trái Cây (Công ty Cổ Phần Trái Cây Dofarming) với mục tiêu mở rộng thêm nhiều nhà máy đáp ứng chuẩn xuất khẩu.",
-      "y2020_title": "Chứng nhận HALAL",
-      "y2020_desc": "Dofarming đã xuất khẩu lô vải thiều đầu tiên sang Nhật Bản. Nhà máy đạt chứng nhận Halal.",
-      "y2019_title": "Chứng nhận FSSC 22000",
-      "y2019_desc": "Dofarming đạt được lô xuất đầu tiên sang Mỹ. Nhà máy đạt chứng chỉ FSSC 22000.",
-      "y2012_title": "USA Code",
-      "y2012_desc": "Bộ Nông nghiệp Hoa Kỳ thẩm định và cấp mã số cho nhà đóng gói trái cây đảm bảo đủ điều kiện xuất khẩu vào thị trường Hoa Kỳ. Dofarming là công ty Việt Nam đầu tiên xuất khẩu thanh long chính thống sang thị trường Mỹ với số lượng lên đến 200 tấn.",
-      "y2009_title": "Dofarming Co.,Ltd",
-      "y2009_desc": "Mô hình được chuyển đổi từ doanh nghiệp tư nhân thành công ty TNHH (Công ty TNHH Xuất nhập khẩu Trái cây Dofarming) với mục tiêu xây dựng nhà đóng gói, vườn cây ăn trái đạt tiêu chuẩn Việt Nam và Quốc tế mở rộng các thị trường khó tính hơn như, Pháp, Úc Canada và Hàn Quốc Trung Đông.",
-      "y1997_title": "Doanh nghiệp tư nhân Dofarming",
-      "y1997_desc": "Khởi nghiệp từ một người thu mua nhỏ, thu mua trái cây của nông dân trong vùng để bán cho các thương lái lớn hoặc các công ty khác. Năm 1997, DNTN Dofarming được thành lập, chuyên xuất khẩu trái cây sang Trung Quốc với số lượng xuất khẩu đạt 2000 tấn/năm."
-    },
+    "timeline": [
+      { "year": 2022, "title": "Mở rộng nhà máy đóng gói", "description": "Công ty tiếp tục đầu tư mở rộng nhà máy tại các tỉnh Đak Lak, Tiền Giang, Đồng Nai với dây chuyền tiện biến và dây chuyền đóng gói sản xuất lên 300.000 tấn/năm với hệ thống máy móc, thiết bị hiện đại.", "color": "bg-blue-500" },
+      { "year": 2021, "title": "Dofarming Fruit JSC", "description": "Mở hình chuyển đổi từ Công ty TNHH MTV sang Công ty Cổ Phần Trái Cây (Công ty Cổ Phần Trái Cây Dofarming) với mục tiêu mở rộng thêm nhiều nhà máy đáp ứng chuẩn xuất khẩu.", "color": "bg-green-500" },
+      { "year": 2020, "title": "Chứng nhận HALAL", "description": "Dofarming đã xuất khẩu lô vải thiều đầu tiên sang Nhật Bản. Nhà máy đạt chứng nhận Halal.", "color": "bg-gray-500" },
+      { "year": 2019, "title": "Chứng nhận FSSC 22000", "description": "Dofarming đạt được lô xuất đầu tiên sang Mỹ. Nhà máy đạt chứng chỉ FSSC 22000.", "color": "bg-green-500" },
+      { "year": 2012, "title": "USA Code", "description": "Bộ Nông nghiệp Hoa Kỳ thẩm định và cấp mã số cho nhà đóng gói trái cây đảm bảo đủ điều kiện xuất khẩu vào thị trường Hoa Kỳ. Dofarming là công ty Việt Nam đầu tiên xuất khẩu thanh long chính thống sang thị trường Mỹ với số lượng lên đến 200 tấn.", "color": "bg-blue-500" },
+      { "year": 2009, "title": "Dofarming Co.,Ltd", "description": "Mô hình được chuyển đổi từ doanh nghiệp tư nhân thành công ty TNHH (Công ty TNHH Xuất nhập khẩu Trái cây Dofarming) với mục tiêu xây dựng nhà đóng gói, vườn cây ăn trái đạt tiêu chuẩn Việt Nam và Quốc tế mở rộng các thị trường khó tính hơn như, Pháp, Úc Canada và Hàn Quốc Trung Đông.", "color": "bg-green-500" },
+      { "year": 1997, "title": "Doanh nghiệp tư nhân Dofarming", "description": "Khởi nghiệp từ một người thu mua nhỏ, thu mua trái cây của nông dân trong vùng để bán cho các thương lái lớn hoặc các công ty khác. Năm 1997, DNTN Dofarming được thành lập, chuyên xuất khẩu trái cây sang Trung Quốc với số lượng xuất khẩu đạt 2000 tấn/năm.", "color": "bg-orange-500" }
+    ],
     "orientation_section_title": "Định hướng kinh doanh",
     "vision_title": "Tầm nhìn",
     "vision_desc_1": "Năm 2025: Trở thành doanh nghiệp hàng đầu với vốn đầu tư 500 tỷ đồng cho việc chế biến và đóng gói trái cây tươi Việt Nam, với tầm nhìn trở thành một nhà phân phối trái cây tại Đông Đak Lak với hơn 10 hecta nhằm phát triển và xây dựng các thủ phủ trái cây của tỉnh Đồng Nai như bưởi, chanh, sầu riêng, chuối... Công suất nhà máy sau khi đi vào hoạt động là từ 70.000 tấn mỗi năm.",
     "vision_desc_2": "Mục tiêu đến năm 2025: Tập đoàn Dofarming trở thành doanh nghiệp có thể cung ứng hơn 500.000 tấn sản phẩm trái cây các loại mỗi năm, cung cấp đủ số lượng và chất lượng cho các thị trường siêu thị lớn bằng chuỗi thương hiệu trái cây \"Dofarming – Made in Vietnam\".",
     "mission_title": "Sứ mệnh",
-    "mission_fields": {
-      "customers_title": "Khách hàng",
-      "customers_desc": "Cung cấp các sản phẩm và dịch vụ với chất lượng tốt nhất.",
-      "employees_title": "Nhân viên",
-      "employees_desc": "Phát triển bền vững và hiệu quả nhằm gia tăng giá trị lao động cho nhân viên.",
-      "farmers_title": "Nông dân",
-      "farmers_desc": "Liên kết chặt chẽ và hỗ trợ kỹ thuật tiên tiến để phát triển vùng trồng an toàn và nâng cao giá trị sản phẩm và năng suất của nông dân.",
-      "society_title": "Xã hội",
-      "society_desc": "Hoạt động sản xuất kinh doanh hài hòa với lợi ích chung của xã hội, góp phần bảo vệ môi trường và xúc tiến cộng đồng."
-    },
+    "mission_fields": [
+      { "icon": "🛒", "title": "Khách hàng", "description": "Cung cấp các sản phẩm và dịch vụ với chất lượng tốt nhất." },
+      { "icon": "👥", "title": "Nhân viên", "description": "Phát triển bền vững và hiệu quả nhằm gia tăng giá trị lao động cho nhân viên." },
+      { "icon": "🌱", "title": "Nông dân", "description": "Liên kết chặt chẽ và hỗ trợ kỹ thuật tiên tiến để phát triển vùng trồng an toàn và nâng cao giá trị sản phẩm và năng suất của nông dân." },
+      { "icon": "🌍", "title": "Xã hội", "description": "Hoạt động sản xuất kinh doanh hài hòa với lợi ích chung của xã hội, góp phần bảo vệ môi trường và xúc tiến cộng đồng." }
+    ],
     "core_values_title": "Giá trị cốt lõi",
     "credibility_title": "Sự tin cậy",
     "unity_title": "Sự đoàn kết",

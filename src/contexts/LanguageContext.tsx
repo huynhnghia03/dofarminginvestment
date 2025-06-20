@@ -7,7 +7,6 @@ import enTranslations from '@/lib/dictionaries/en.json'; // Điều chỉnh đư
 type Language = 'vi' | 'en';
 
 // Định nghĩa kiểu cho object chứa các bản dịch
-// Sử dụng `any` ở đây để linh hoạt với cấu trúc JSON lồng nhau
 type Translations = { [key: string]: any };
 
 const translations: Record<Language, Translations> = {
@@ -19,39 +18,49 @@ const translations: Record<Language, Translations> = {
 interface LanguageContextType {
   language: Language;
   setLanguage: (language: Language) => void;
-  t: (key: string) => any; // Thay đổi: Hàm t có thể trả về bất kỳ kiểu dữ liệu nào
+  t: (key: string) => any;
 }
 
-// 1. Tạo Context với kiểu đã định nghĩa
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-// Định nghĩa kiểu cho props của Provider
 interface LanguageProviderProps {
   children: ReactNode;
 }
 
-// 2. Tạo Provider Component
 export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('vi');
-  const [trans, setTrans] = useState<Translations>(translations[language]);
+  const [trans, setTrans] = useState<Translations>(translations.vi);
+  const [isMounted, setIsMounted] = useState(false);
 
-  // Effect để cập nhật bản dịch khi ngôn ngữ thay đổi
+  // Sau khi component được mount ở phía client, đọc localStorage.
   useEffect(() => {
-    setTrans(translations[language]);
-  }, [language]);
-  
-  // Hàm dịch (translation function)
-  const t = (key: string): any => { // Thay đổi: Kiểu trả về là any
+    const savedLang = localStorage.getItem('language') as Language;
+    if (savedLang && (savedLang === 'vi' || savedLang === 'en')) {
+      setLanguage(savedLang); // Nếu có ngôn ngữ đã lưu, cập nhật state
+    }
+    setIsMounted(true); // Đánh dấu là component đã mount và sẵn sàng để hiển thị
+  }, []); // Chạy một lần duy nhất sau khi mount
+
+  // Khi state `language` thay đổi, cập nhật bản dịch và lưu vào localStorage.
+  useEffect(() => {
+    // Chỉ thực hiện ở client để đảm bảo an toàn
+    if (isMounted) {
+      localStorage.setItem('language', language);
+      setTrans(translations[language]);
+    }
+  }, [language, isMounted]); // Chạy mỗi khi `language` hoặc `isMounted` thay đổi
+
+  // Hàm dịch
+  const t = (key: string): any => {
     const keys = key.split('.');
     let result = trans;
     for (const k of keys) {
-        result = result?.[k];
-        if (result === undefined) {
-            // Nếu không tìm thấy key, trả về chính key đó để dễ debug
-            return key;
-        }
+      result = result?.[k];
+      if (result === undefined) {
+        return key; // Trả về key nếu không tìm thấy để dễ debug
+      }
     }
-    return result; // Thay đổi: Trả về trực tiếp, không ép kiểu thành String
+    return result;
   };
 
   const value: LanguageContextType = {
@@ -60,6 +69,14 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
     t,
   };
 
+  // *** GIẢI PHÁP CHỐNG GIẬT LAG ***
+  // Chỉ khi component đã được mount ở client và ngôn ngữ đã được xác định,
+  // chúng ta mới render nội dung của trang.
+  // Điều này ngăn việc hiển thị nội dung tiếng Việt mặc định trước khi đổi sang tiếng Anh.
+  if (!isMounted) {
+    return null; // Hoặc bạn có thể trả về một spinner loading toàn trang tại đây
+  }
+
   return (
     <LanguageContext.Provider value={value}>
       {children}
@@ -67,7 +84,7 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
   );
 };
 
-// 3. Tạo custom hook để sử dụng context dễ dàng hơn
+// Custom hook để sử dụng context
 export const useLanguage = (): LanguageContextType => {
   const context = useContext(LanguageContext);
   if (context === undefined) {
