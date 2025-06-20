@@ -212,18 +212,60 @@
     "breadcrumb_history": "Lịch sử & định hướng phát triển",
     "history_section_title": "Lịch sử",
     "timeline": [
-      { "year": 2022, "title": "Mở rộng nhà máy đóng gói", "description": "Công ty tiếp tục đầu tư mở rộng nhà máy tại các tỉnh Đak Lak, Tiền Giang, Đồng Nai với dây chuyền tiện biến và dây chuyền đóng gói sản xuất lên 300.000 tấn/năm với hệ thống máy móc, thiết bị hiện đại.", "color": "bg-blue-500" },
-      { "year": 2021, "title": "Dofarming Fruit JSC", "description": "Mở hình chuyển đổi từ Công ty TNHH MTV sang Công ty Cổ Phần Trái Cây (Công ty Cổ Phần Trái Cây Dofarming) với mục tiêu mở rộng thêm nhiều nhà máy đáp ứng chuẩn xuất khẩu.", "color": "bg-green-500" },
-      { "year": 2020, "title": "Chứng nhận HALAL", "description": "Dofarming đã xuất khẩu lô vải thiều đầu tiên sang Nhật Bản. Nhà máy đạt chứng nhận Halal.", "color": "bg-gray-500" },
-      { "year": 2019, "title": "Chứng nhận FSSC 22000", "description": "Dofarming đạt được lô xuất đầu tiên sang Mỹ. Nhà máy đạt chứng chỉ FSSC 22000.", "color": "bg-green-500" },
-      { "year": 2012, "title": "USA Code", "description": "Bộ Nông nghiệp Hoa Kỳ thẩm định và cấp mã số cho nhà đóng gói trái cây đảm bảo đủ điều kiện xuất khẩu vào thị trường Hoa Kỳ. Dofarming là công ty Việt Nam đầu tiên xuất khẩu thanh long chính thống sang thị trường Mỹ với số lượng lên đến 200 tấn.", "color": "bg-blue-500" },
-      { "year": 2009, "title": "Dofarming Co.,Ltd", "description": "Mô hình được chuyển đổi từ doanh nghiệp tư nhân thành công ty TNHH (Công ty TNHH Xuất nhập khẩu Trái cây Dofarming) với mục tiêu xây dựng nhà đóng gói, vườn cây ăn trái đạt tiêu chuẩn Việt Nam và Quốc tế mở rộng các thị trường khó tính hơn như, Pháp, Úc Canada và Hàn Quốc Trung Đông.", "color": "bg-green-500" },
-      { "year": 1997, "title": "Doanh nghiệp tư nhân Dofarming", "description": "Khởi nghiệp từ một người thu mua nhỏ, thu mua trái cây của nông dân trong vùng để bán cho các thương lái lớn hoặc các công ty khác. Năm 1997, DNTN Dofarming được thành lập, chuyên xuất khẩu trái cây sang Trung Quốc với số lượng xuất khẩu đạt 2000 tấn/năm.", "color": "bg-orange-500" }
-    ],
+       {
+    "year": 2022,
+    "icon": "🏡",
+    "title": "Mở rộng khu chế biến tại nông trại",
+    "description": "Dofaming tiếp tục đầu tư nâng cấp hệ thống sơ chế và đóng gói tại nông trại ở Úc với công suất lên đến 300.000 tấn/năm, sử dụng thiết bị hiện đại để phục vụ thị trường nội địa và xuất khẩu.",
+    "color": "bg-blue-500"
+  },
+  {
+    "year": 2021,
+    "icon": "🌿",
+    "title": "Mở rộng vùng trồng",
+    "description": "Dofaming mở rộng diện tích canh tác tại Murray Upper (QLD, Úc), đầu tư thêm vườn trồng đạt chuẩn GlobalGAP nhằm hướng đến xuất khẩu vào các thị trường cao cấp như Nhật Bản, Mỹ, và EU.",
+    "color": "bg-green-500"
+  },
+  {
+    "year": 2020,
+    "icon": "🏆",
+    "title": "Chứng nhận HALAL",
+    "description": "Lô trái cây đầu tiên từ nông trại Dofaming được xuất khẩu sang Nhật Bản. Khu chế biến đạt chứng nhận Halal phục vụ thị trường Hồi giáo.",
+    "color": "bg-gray-500"
+  },
+  {
+    "year": 2019,
+    "icon": "📜",
+    "title": "Chứng nhận FSSC 22000",
+    "description": "Nhà sơ chế của Dofaming tại Úc đạt chứng nhận an toàn thực phẩm FSSC 22000, đủ điều kiện để cung ứng cho các chuỗi bán lẻ tại Mỹ.",
+    "color": "bg-green-500"
+  },
+  {
+    "year": 2012,
+    "icon": "🇺🇸",
+    "title": "Mã số xuất khẩu vào Hoa Kỳ",
+    "description": "Dofaming được cấp mã số đóng gói trái cây đạt chuẩn USDA để xuất khẩu vào Hoa Kỳ, trở thành một trong những nông trại Việt đầu tiên thực hiện điều này tại Úc.",
+    "color": "bg-blue-500"
+  },
+  {
+    "year": 2009,
+    "icon": "🧑‍🌾",
+    "title": "Định hướng chuyên nghiệp hóa",
+    "description": "Dofaming bắt đầu đầu tư theo hướng chuyên nghiệp hóa nông trại tại Úc, tập trung xây dựng vùng trồng đạt chuẩn xuất khẩu và phát triển bền vững.",
+    "color": "bg-green-500"
+  },
+  {
+    "year": 1997,
+    "icon": "🌱",
+    "title": "Khởi nguồn từ nông dân thu mua",
+    "description": "Dofaming khởi nghiệp từ việc thu mua trái cây của nông dân địa phương tại Việt Nam, sau đó chuyển sang mô hình nông trại xuất khẩu tại Úc với lượng sản phẩm đạt 2.000 tấn/năm.",
+    "color": "bg-orange-500"
+  }
+      ],
     "orientation_section_title": "Định hướng kinh doanh",
     "vision_title": "Tầm nhìn",
-    "vision_desc_1": "Năm 2025: Trở thành doanh nghiệp hàng đầu với vốn đầu tư 500 tỷ đồng cho việc chế biến và đóng gói trái cây tươi Việt Nam, với tầm nhìn trở thành một nhà phân phối trái cây tại Đông Đak Lak với hơn 10 hecta nhằm phát triển và xây dựng các thủ phủ trái cây của tỉnh Đồng Nai như bưởi, chanh, sầu riêng, chuối... Công suất nhà máy sau khi đi vào hoạt động là từ 70.000 tấn mỗi năm.",
-    "vision_desc_2": "Mục tiêu đến năm 2025: Tập đoàn Dofarming trở thành doanh nghiệp có thể cung ứng hơn 500.000 tấn sản phẩm trái cây các loại mỗi năm, cung cấp đủ số lượng và chất lượng cho các thị trường siêu thị lớn bằng chuỗi thương hiệu trái cây \"Dofarming – Made in Vietnam\".",
+    "vision_desc_1": "Đến năm 2025, Dofaming định hướng trở thành một trong những nông trại tiên phong trong lĩnh vực canh tác và chế biến trái cây tươi tại Úc, đặc biệt tại khu vực Murray Upper, Queensland (567 Bilyana Road - QLD 4854). Với diện tích hơn 10 hecta, Dofaming tập trung phát triển các loại cây trồng chủ lực như xoài, chanh, chuối và bơ, đạt sản lượng lên đến 70.000 tấn/năm.",
+    "vision_desc_2": " Mục tiêu của Dofaming là cung cấp hơn 500.000 tấn trái cây chất lượng cao mỗi năm cho các chuỗi siêu thị và thị trường quốc tế, dưới thương hiệu \"Dofaming – Grown in Australia\".",
     "mission_title": "Sứ mệnh",
     "mission_fields": [
       { "icon": "🛒", "title": "Khách hàng", "description": "Cung cấp các sản phẩm và dịch vụ với chất lượng tốt nhất." },

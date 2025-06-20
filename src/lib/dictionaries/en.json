@@ -194,8 +194,7 @@
     "form_subject_placeholder": "Subject",
     "form_message_placeholder": "Enter your message",
     "form_submit_button": "Send Message"
-  }
-,
+  },
   "certificates_page": {
     "title": "Standard Certificates",
     "breadcrumb_about": "About Us",
@@ -210,38 +209,80 @@
   }
 ,
   "history_page": {
-    "title": "History & Development Orientation",
-    "breadcrumb_about": "About Us",
-    "breadcrumb_history": "History & Development Orientation",
-    "history_section_title": "History",
-    "timeline": [
-      { "year": 2022, "title": "Packing Factory Expansion", "description": "The company continues to invest in expanding factories in Dak Lak, Tien Giang, and Dong Nai provinces with processing and packaging lines producing up to 300,000 tons/year with modern machinery and equipment.", "color": "bg-blue-500" },
-      { "year": 2021, "title": "Dofarming Fruit JSC", "description": "Transitioned from a One-Member LLC to a Joint Stock Fruit Company (Dofarming Fruit JSC) with the goal of expanding more factories to meet export standards.", "color": "bg-green-500" },
-      { "year": 2020, "title": "HALAL Certification", "description": "Dofarming exported its first batch of lychees to Japan. The factory achieved Halal certification.", "color": "bg-gray-500" },
-      { "year": 2019, "title": "FSSC 22000 Certification", "description": "Dofarming achieved its first export shipment to the USA. The factory achieved FSSC 22000 certification.", "color": "bg-green-500" },
-      { "year": 2012, "title": "USA Code", "description": "The United States Department of Agriculture inspected and issued a code for the fruit packing house, ensuring it met the conditions for export to the US market. Dofarming was the first Vietnamese company to officially export dragon fruit to the US market with a quantity of up to 200 tons.", "color": "bg-blue-500" },
-      { "year": 2009, "title": "Dofarming Co.,Ltd", "description": "The model was converted from a private enterprise to a limited liability company (Dofarming Fruit Import-Export Co., Ltd) to build packing houses and orchards meeting national and international standards, expanding into more demanding markets like France, Australia, Canada, and the Middle East.", "color": "bg-green-500" },
-      { "year": 1997, "title": "Dofarming Private Enterprise", "description": "Started as a small buyer, purchasing fruit from local farmers to sell to larger traders. In 1997, Dofarming Private Enterprise was established, specializing in exporting fruit to China with an annual export volume of 2000 tons.", "color": "bg-orange-500" }
-    ],
-    "orientation_section_title": "Business Orientation",
-    "vision_title": "Vision",
-    "vision_desc_1": "By 2025: To become a leading enterprise with an investment of 500 billion VND for processing and packaging fresh Vietnamese fruits, with a vision to become a fruit distributor in East Dak Lak with over 10 hectares. To develop fruit hubs in Dong Nai province for pomelo, lemon, durian, bananas, etc. The factory's capacity after commissioning will be from 70,000 tons per year.",
-    "vision_desc_2": "Goal by 2025: Dofarming Group will become an enterprise capable of supplying over 500,000 tons of various fruit products annually, providing sufficient quantity and quality for large supermarket markets through the \"Dofarming – Made in Vietnam\" fruit brand chain.",
-    "mission_title": "Mission",
-    "mission_fields": [
-      { "icon": "🛒", "title": "Customers", "description": "Provide products and services with the best quality." },
-      { "icon": "👥", "title": "Employees", "description": "Sustainable and effective development to increase labor value for employees." },
-      { "icon": "🌱", "title": "Farmers", "description": "Close linkage and advanced technical support to develop safe growing areas and enhance product value and productivity for farmers." },
-      { "icon": "🌍", "title": "Society", "description": "Business operations are aligned with the common interests of society, contributing to environmental protection and community promotion." }
-    ],
-    "core_values_title": "Core Values",
-    "credibility_title": "Credibility",
-    "unity_title": "Unity",
-    "unity_desc": "All members of the company must work towards the common goal of the organization, combining the strengths of each individual and maximizing capacity to achieve the goal most effectively.",
-    "integrity_title": "Integrity",
-    "integrity_desc": "All members of the company must work with integrity, which is the guiding principle in daily communication and work. This is the factor that builds trust and respect among members.",
-    "cta_button": "Board of Management"
-  },
+  "title": "History & Development Direction",
+  "breadcrumb_about": "About Us",
+  "breadcrumb_history": "History & Development Direction",
+  "history_section_title": "History",
+  "timeline": [
+    {
+      "year": 2022,
+      "icon": "🏡",
+      "title": "Expansion of Processing Area at the Farm",
+      "description": "Dofaming continued to invest in upgrading the preprocessing and packaging system at the farm in Australia, with a capacity of up to 300,000 tons/year, using modern equipment to serve both domestic and export markets.",
+      "color": "bg-blue-500"
+    },
+    {
+      "year": 2021,
+      "icon": "🌿",
+      "title": "Expansion of Growing Areas",
+      "description": "Dofaming expanded cultivation areas in Murray Upper (QLD, Australia), and invested in GlobalGAP-standard orchards aimed at high-end markets such as Japan, the U.S., and the EU.",
+      "color": "bg-green-500"
+    },
+    {
+      "year": 2020,
+      "icon": "🏆",
+      "title": "Halal Certification",
+      "description": "The first batch of fruit from Dofaming’s farm was exported to Japan. The processing area achieved Halal certification to serve Muslim markets.",
+      "color": "bg-gray-500"
+    },
+    {
+      "year": 2019,
+      "icon": "📜",
+      "title": "FSSC 22000 Certification",
+      "description": "Dofaming’s preprocessing facility in Australia obtained FSSC 22000 food safety certification, qualifying it to supply to retail chains in the U.S.",
+      "color": "bg-green-500"
+    },
+    {
+      "year": 2012,
+      "icon": "🇺🇸",
+      "title": "Export Code to the United States",
+      "description": "Dofaming was granted a USDA-standard fruit packaging code for exports to the U.S., becoming one of the first Vietnamese farms to do so in Australia.",
+      "color": "bg-blue-500"
+    },
+    {
+      "year": 2009,
+      "icon": "🧑‍🌾",
+      "title": "Professionalization Direction",
+      "description": "Dofaming began professionalizing its farm operations in Australia, focusing on building export-standard growing areas and sustainable development.",
+      "color": "bg-green-500"
+    },
+    {
+      "year": 1997,
+      "icon": "🌱",
+      "title": "Started as a Local Fruit Buyer",
+      "description": "Dofaming started as a fruit buyer from local Vietnamese farmers, later transitioning to an export-oriented farm model in Australia, achieving an output of 2,000 tons/year.",
+      "color": "bg-orange-500"
+    }
+  ],
+  "orientation_section_title": "Business Orientation",
+  "vision_title": "Vision",
+  "vision_desc_1": "By 2025, Dofaming aims to become a pioneer in the field of fresh fruit cultivation and processing in Australia, especially in the Murray Upper, Queensland area (567 Bilyana Road - QLD 4854). With more than 10 hectares, Dofaming focuses on developing key crops such as mangoes, lemons, bananas, and avocados, achieving a production volume of up to 70,000 tons/year.",
+  "vision_desc_2": " Dofaming’s goal is to supply over 500,000 tons of high-quality fruit annually to supermarket chains and international markets under the brand \"Dofaming – Grown in Australia\".",
+  "mission_title": "Mission",
+  "mission_fields": [
+    { "icon": "🛒", "title": "Customers", "description": "Provide the best quality products and services." },
+    { "icon": "👥", "title": "Employees", "description": "Develop sustainably and effectively to enhance employee value." },
+    { "icon": "🌱", "title": "Farmers", "description": "Establish close links and support advanced techniques to develop safe cultivation areas and improve both product value and farmer productivity." },
+    { "icon": "🌍", "title": "Society", "description": "Operate harmoniously with society’s common interests, contributing to environmental protection and community development." }
+  ],
+  "core_values_title": "Core Values",
+  "credibility_title": "Credibility",
+  "unity_title": "Unity",
+  "unity_desc": "All members must align with the organization's shared goals. By combining each individual’s strengths, we can fully mobilize our capacity to achieve the most effective outcomes.",
+  "integrity_title": "Integrity",
+  "integrity_desc": "Every member must act with integrity. This is our compass in daily communication and work. Integrity builds trust and respect among team members.",
+  "cta_button": "Board of Management"
+},
   "footer": {
     "contact": "Contact Us",
     "address": "567 Bilyana road - Murray upper - QLD - 4854.",
