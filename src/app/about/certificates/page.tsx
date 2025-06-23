@@ -153,53 +153,6 @@ export default function CertificatesPage() {
           </div>
         </div>
 
-        {/* Certificates Gallery */}
-        {/* <div className="mt-16">
-          <div className="grid md:grid-cols-3 gap-8"> */}
-            {/* FSSC 22000 Certificate */}
-            {/* <div className="text-center">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <Image
-                  src="https://chanhthu.com/wp-content/uploads/2024/06/FSSC-22000.jpg"
-                  alt="FSSC 22000 Certificate"
-                  width={300}
-                  height={400}
-                  className="w-full"
-                />
-              </div>
-              <h5 className="mt-4 font-semibold text-gray-800">FSSC 22000</h5>
-            </div> */}
-
-            {/* HACCP Certificate */}
-            {/* <div className="text-center">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <Image
-                  src="https://chanhthu.com/wp-content/uploads/2024/06/HACCP.jpg"
-                  alt="HACCP Certificate"
-                  width={300}
-                  height={400}
-                  className="w-full"
-                />
-              </div>
-              <h5 className="mt-4 font-semibold text-gray-800">HACCP</h5>
-            </div> */}
-
-            {/* HALAL Certificate */}
-            {/* <div className="text-center">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <Image
-                  src="https://chanhthu.com/wp-content/uploads/2024/06/HALAL.jpg"
-                  alt="HALAL Certificate"
-                  width={300}
-                  height={400}
-                  className="w-full"
-                />
-              </div>
-              <h5 className="mt-4 font-semibold text-gray-800">HALAL</h5>
-            </div>
-          </div>
-        </div> */}
-
         {/* CTA Button */}
         <div className="text-center mt-12">
           <Link href="/about/history" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300 inline-flex items-center">

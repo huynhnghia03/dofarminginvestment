@@ -210,9 +210,9 @@ export default function Home() {
               className="z-1 object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-            <a href="/" target="_blank" rel="noopener noreferrer" className="play-button-ripple relative z-10 w-15 h-15 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center backdrop-blur-sm hover:bg-white/50 transition-colors">
+            <button className="play-button-ripple relative z-10 w-15 h-15 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center backdrop-blur-sm hover:cursor-pointer transition-colors">
               <Play className="w-7 h-7 md:w-8 md:h-8 text-[#1f9e2e] fill-current" />
-            </a>
+            </button>
           </div>
           <div className="relative bg-white shadow-lg rounded-lg -mt-16 p-6 md:p-8 z-2">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center divide-x divide-gray-200">
