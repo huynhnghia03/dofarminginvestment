@@ -154,10 +154,10 @@ export default function CertificatesPage() {
         </div>
 
         {/* Certificates Gallery */}
-        <div className="mt-16">
-          <div className="grid md:grid-cols-3 gap-8">
+        {/* <div className="mt-16">
+          <div className="grid md:grid-cols-3 gap-8"> */}
             {/* FSSC 22000 Certificate */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <Image
                   src="https://chanhthu.com/wp-content/uploads/2024/06/FSSC-22000.jpg"
@@ -168,10 +168,10 @@ export default function CertificatesPage() {
                 />
               </div>
               <h5 className="mt-4 font-semibold text-gray-800">FSSC 22000</h5>
-            </div>
+            </div> */}
 
             {/* HACCP Certificate */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <Image
                   src="https://chanhthu.com/wp-content/uploads/2024/06/HACCP.jpg"
@@ -182,10 +182,10 @@ export default function CertificatesPage() {
                 />
               </div>
               <h5 className="mt-4 font-semibold text-gray-800">HACCP</h5>
-            </div>
+            </div> */}
 
             {/* HALAL Certificate */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <Image
                   src="https://chanhthu.com/wp-content/uploads/2024/06/HALAL.jpg"
@@ -198,7 +198,7 @@ export default function CertificatesPage() {
               <h5 className="mt-4 font-semibold text-gray-800">HALAL</h5>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* CTA Button */}
         <div className="text-center mt-12">
