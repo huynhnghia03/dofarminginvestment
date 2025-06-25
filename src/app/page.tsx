@@ -201,18 +201,22 @@ export default function Home() {
         </section>
         
         {/* Video & Stats Section */}
+      {/* Video & Stats Section */}
         <section className="container mx-auto px-4 lg:px-8 pb-16 lg:pb-24">
           <div className="relative rounded-lg overflow-hidden h-[250px] md:h-[450px] flex items-center justify-center bg-video-thumbnail">
-            <Image
-              src="/images/thumnailvideo.jpg"
-              alt="Nhà máy Dofarming"
-              fill
-              className="z-1 object-cover"
+            <video
+              src="/videos/video.mp4"
+              // alt="Nhà máy Dofarming"
+              // fill
+              autoPlay // Thêm thuộc tính autoplay
+              loop     // Thêm thuộc tính loop
+              muted  
+              className="z-1 object-cover transform rotate-90" // Thêm class rotate-90 vào đây
             />
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-            <button className="play-button-ripple relative z-10 w-15 h-15 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center backdrop-blur-sm hover:cursor-pointer transition-colors">
+            {/* <button className="play-button-ripple relative z-10 w-15 h-15 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center backdrop-blur-sm hover:cursor-pointer transition-colors">
               <Play className="w-7 h-7 md:w-8 md:h-8 text-[#1f9e2e] fill-current" />
-            </button>
+            </button> */}
           </div>
           <div className="relative bg-white shadow-lg rounded-lg -mt-16 p-6 md:p-8 z-2">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center divide-x divide-gray-200">
